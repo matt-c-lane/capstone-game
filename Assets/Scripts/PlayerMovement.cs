@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Speed of movement
+    public float moveSpeed = 5f; // Normal movement speed
+    public float sprintSpeed = 8f; // Sprint speed
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
@@ -21,7 +22,10 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Check if the player is holding the Shift key
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
+
         // Apply movement to Rigidbody2D
-        rb.linearVelocity = moveInput * moveSpeed;
+        rb.linearVelocity = moveInput * currentSpeed;
     }
 }
