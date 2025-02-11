@@ -11,12 +11,12 @@ public class InventoryItem : ScriptableObject
     public int quantity;
     public Sprite icon;
 
-    public InventoryItem(string name, string desc, int qty = 1, Sprite icn)
+    public InventoryItem(string name, string desc, Sprite icn, int qty = 1)
     {
         itemName = name;
         description = desc;
-        quantity = qty;
         icon = icn;
+        quantity = qty;
     }
 
     public override string ToString()
