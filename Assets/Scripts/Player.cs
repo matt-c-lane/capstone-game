@@ -1,0 +1,64 @@
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    // === Health System ===
+    public int currentHealth { get; private set; }
+    public int maxHealth { get; private set; } = 100;
+
+    // === Inventory System ===
+    private Inventory inventory;
+
+    // === Weapon System ===
+    private Weapon equippedWeapon;
+
+    // === Movement System ===
+    public float moveSpeed = 5f;
+    public float sprintMultiplier = 1.5f;
+    private Rigidbody2D rb;
+    private Vector2 movementInput;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        inventory = new Inventory();
+        currentHealth = maxHealth;
+    }
+
+    void Update()
+    {
+        // === Handle Movement Input ===
+        movementInput.x = Input.GetAxisRaw("Horizontal");
+        movementInput.y = Input.GetAxisRaw("Vertical");
+        movementInput = movementInput.normalized; // Prevent diagonal speed boost
+
+        // Sprinting (Shift Key)
+        float speedModifier = Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
+
+        rb.linearVelocity = movementInput * moveSpeed * speedModifier;
+
+        // === Handle Attacks ===
+        if (Input.GetMouseButtonDown(0) && equippedWeapon != null) // Left-click attack
+        {
+            Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+            equippedWeapon.Attack(attackDirection);
+        }
+    }
+
+    // === Health Functions ===
+    public void IncreaseHealth(int amount) { currentHealth = Mathf.Min(currentHealth + amount, maxHealth); }
+    public void DecreaseHealth(int amount) { currentHealth = Mathf.Max(currentHealth - amount, 0); if (currentHealth == 0) Die(); }
+    public void IncreaseMaxHealth(int amount) { maxHealth += amount; currentHealth += amount; }
+    public void DecreaseMaxHealth(int amount) { maxHealth = Mathf.Max(maxHealth - amount, 1); currentHealth = Mathf.Min(currentHealth, maxHealth); }
+    public void ApplyDamage(int damage, object enemy) { DecreaseHealth(damage); }
+
+    private void Die() { Debug.Log("Player has died!"); }
+
+    // === Inventory Functions ===
+    public void AddToInventory(InventoryItem item) { inventory.AddItem(item); }
+    public void RemoveFromInventory(string itemName, int amount = 1) { inventory.RemoveItem(itemName, amount); }
+    public void ShowInventory() { inventory.PrintInventory(); }
+
+    // === Weapon Functions ===
+    public void EquipWeapon(Weapon weapon) { equippedWeapon = weapon; Debug.Log($"Equipped {weapon.weaponName}"); }
+}
