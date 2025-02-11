@@ -1,5 +1,9 @@
 using UnityEngine;
-
+/*
+RangedAttack is the base class for all ranged attacks. This inherits from Attack.
+In general, you should not inherit directly from Attack.
+Inherit from MeleeAttack or RangedAttack instead.
+*/
 public class RangedAttack : Attack
 {
     public float projectileRange = 5f;

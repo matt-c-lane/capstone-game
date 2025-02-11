@@ -1,5 +1,9 @@
 using UnityEngine;
-
+/*
+MeleeAttack is the base class for all melee attacks. This inherits from Attack.
+In general, you should not inherit directly from Attack.
+Inherit from MeleeAttack or RangedAttack instead.
+*/
 public class MeleeAttack : Attack
 {
     public float attackRadius = 1.5f;
