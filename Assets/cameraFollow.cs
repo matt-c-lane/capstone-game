@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         if (target != null) // Ensure target exists to prevent errors
-        {
+        {   // camera speed
             Vector3 newPos = new Vector3(target.position.x, target.position.y, -10f);
             transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
         }
