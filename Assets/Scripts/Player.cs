@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
 
         rb.linearVelocity = movementInput * moveSpeed * speedModifier;
 
+
         // === Handle Attacks ===
         if (Input.GetMouseButtonDown(0) && equippedWeapon != null) // Left-click attack
         {
