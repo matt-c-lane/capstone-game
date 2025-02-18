@@ -27,6 +27,11 @@ public class MeleeAttack : Attack
         {
             player.StartCoroutine(PlayAttackAnimation(player, meleeWeapon.weaponIcon, meleeWeapon.spriteSize, meleeWeapon.attackOffset));
         }
+
+        if (DebugManager.Instance != null)
+        {
+            DebugManager.Instance.RegisterMeleeAttack(origin, attackRadius);
+        }
     }
 
     private IEnumerator PlayAttackAnimation(Player player, Sprite attackSprite, Vector2 spriteSize, float offsetDistance = 1f)

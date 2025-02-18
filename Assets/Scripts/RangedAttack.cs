@@ -24,6 +24,12 @@ public class RangedAttack : Attack
             player.StartCoroutine(PlayAttackAnimation(player, rangedWeapon.weaponIcon, rangedWeapon.weaponSpriteSize));
             player.StartCoroutine(PlayProjectileAnimation(origin, direction, rangedWeapon));
         }
+        
+        // Register for debug drawing
+        if (DebugManager.Instance != null)
+        {
+            DebugManager.Instance.RegisterRangedAttack(origin, direction, projectileRange);
+        }
     }
 
     private IEnumerator PlayAttackAnimation(Player player, Sprite weaponSprite, Vector2 spriteSize)
@@ -65,5 +71,12 @@ public class RangedAttack : Attack
         }
 
         GameObject.Destroy(projectileObj);
+    }
+
+    public void DrawDebug(Vector2 origin, Vector2 direction)
+    {
+        Gizmos.color = Color.blue; // Ranged attack area
+        Vector2 endPosition = origin + (direction.normalized * projectileRange);
+        Gizmos.DrawLine(origin, endPosition);
     }
 }
