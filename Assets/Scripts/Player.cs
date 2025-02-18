@@ -10,7 +10,10 @@ public class Player : MonoBehaviour
     private Inventory inventory;
 
     // === Weapon System ===
-    private Weapon equippedWeapon;
+    public Weapon equippedWeapon;
+
+    // === Player Class System ===
+    private PlayerClass chosenClass;
 
     // === Movement System ===
     public float moveSpeed = 5f;
@@ -38,10 +41,10 @@ public class Player : MonoBehaviour
         rb.linearVelocity = movementInput * moveSpeed * speedModifier;
 
         // === Handle Attacks ===
-        if (Input.GetMouseButtonDown(0) && equippedWeapon != null) // Left-click attack
+        if (Input.GetMouseButtonDown(0) && equippedWeapon != null)
         {
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            equippedWeapon.Attack(attackDirection);
+            equippedWeapon.ExecuteAttack(transform.position, attackDirection);
         }
     }
 
@@ -61,4 +64,7 @@ public class Player : MonoBehaviour
 
     // === Weapon Functions ===
     public void EquipWeapon(Weapon weapon) { equippedWeapon = weapon; Debug.Log($"Equipped {weapon.weaponName}"); }
+
+    // === Player CLass Functions ===
+    public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }
 }

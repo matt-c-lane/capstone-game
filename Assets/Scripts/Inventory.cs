@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+Inventory manages the player's inventory. The player object creates its own instance of this class.
+Inventory is in charge of managing InventoryItem objects. Look to that class for creating items.
+*/
 public class Inventory
 {
     private List<InventoryItem> items = new List<InventoryItem>();
