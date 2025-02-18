@@ -1,10 +1,20 @@
 using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour
+public abstract class Weapon : ScriptableObject
 {
     public string weaponName;
-    public int damage;
-    public float attackRange;
+    public Sprite weaponIcon;
+    public Attack attack;  // Reference to an Attack ScriptableObject
 
-    public abstract void Attack(Vector2 attackDirection);
+    public void ExecuteAttack(Vector2 origin, Vector2 direction)
+    {
+        if (attack != null)
+        {
+            attack.Execute(origin, direction);
+        }
+        else
+        {
+            Debug.LogWarning($"{weaponName} has no attack assigned!");
+        }
+    }
 }
