@@ -1,19 +1,8 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New Melee Weapon", menuName = "Weapons/Melee Weapon")]
 public class MeleeWeapon : Weapon
 {
-    private MeleeAttack meleeAttack;
-
-    private void Awake()
-    {
-        meleeAttack = gameObject.AddComponent<MeleeAttack>(); // Attach attack component
-        meleeAttack.damage = damage;
-        meleeAttack.attackRadius = attackRange;
-        meleeAttack.enemyLayer = LayerMask.GetMask("Enemies");
-    }
-
-    public override void Attack(Vector2 attackDirection)
-    {
-        meleeAttack.Execute(transform.position, attackDirection);
-    }
+    public Vector2 spriteSize = new Vector2(1, 1); // Default size (1x1)
+    public float attackOffset = 1f;
 }

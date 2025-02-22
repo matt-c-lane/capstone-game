@@ -1,19 +1,9 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New Ranged Weapon", menuName = "Weapons/Ranged Weapon")]
 public class RangedWeapon : Weapon
 {
-    private RangedAttack rangedAttack;
-
-    private void Awake()
-    {
-        rangedAttack = gameObject.AddComponent<RangedAttack>(); // Attach attack component
-        rangedAttack.damage = damage;
-        rangedAttack.projectileRange = attackRange;
-        rangedAttack.enemyLayer = LayerMask.GetMask("Enemies");
-    }
-
-    public override void Attack(Vector2 attackDirection)
-    {
-        rangedAttack.Execute(transform.position, attackDirection);
-    }
+    public Sprite projectileSprite;
+    public Vector2 weaponSpriteSize = new Vector2(1, 1); // Default size
+    public Vector2 projectileSpriteSize = new Vector2(1, 1); // Default size
 }
