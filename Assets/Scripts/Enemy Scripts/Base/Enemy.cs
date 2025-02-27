@@ -16,19 +16,27 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsWithinStrickingDistance { get; set; }
 
 
-    private void Awake()
+    public void Awake()
     {
+        EnemyIdleBaseInstance = Instantiate(EnemyIdleBase);
+        EnemyChaseBaseInstance = Instantiate(EnemyChaseBase);
+        EnemyAttackBaseInstance = Instantiate(EnemyAttackBase);
+
         StateMachine = new EnemyStateMachine();
+
         IdleState = new EnemyIdleState(this, StateMachine);
         ChaseState = new EnemyChaseState(this, StateMachine);
         AttackState = new EnemyAttackScript(this, StateMachine);
     }
-
     public void Start()
     {
 
         CurrentHealth = MaxHealth;
         RB = GetComponent<Rigidbody2D>();
+
+        EnemyIdleBaseInstance.Initialize(gameObject, this);
+        EnemyChaseBaseInstance.Initialize(gameObject, this);
+        EnemyAttackBaseInstance.Initialize(gameObject, this);
         StateMachine.Initialize(IdleState);
     }
     private void Update()
@@ -117,10 +125,15 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public EnemyState AttackState { get; set; }
 
     #endregion
-    #region Idle Variables
-    public Rigidbody2D BulletPrefab;
-    public float RandomMovementRange = 5f;
-    public float RandomMovementSpeed = 1f;
+    
+    #region ScriptableObject Variables
+    [SerializeField] private EnemyIdleSOBase EnemyIdleBase;
+    [SerializeField] private EnemyChaseSOBase EnemyChaseBase;
+    [SerializeField] private EnemyAttackSOBase EnemyAttackBase;
+
+    public EnemyIdleSOBase EnemyIdleBaseInstance { get; set; }
+    public EnemyChaseSOBase EnemyChaseBaseInstance { get; set; }
+    public EnemyAttackSOBase EnemyAttackBaseInstance { get; set; }
     #endregion
     #region Distance checks
     public void SetAggroStatus(bool isAggroed)

@@ -252,28 +252,14 @@ GameObject:
   - component: {fileID: 334993833}
   - component: {fileID: 334993832}
   - component: {fileID: 334993831}
-  - component: {fileID: 334993830}
+  - component: {fileID: 334993835}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &334993830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334993828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb247b42bbc21da4eb746ce3f8374fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  sprintSpeed: 8
 --- !u!61 &334993831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -417,6 +403,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334993835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334993828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d0fbc5e5525ca4cbf9028ae51b6636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equippedWeapon: {fileID: 0}
+  moveSpeed: 5
+  sprintMultiplier: 1.5
 --- !u!1 &428178401
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +510,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &428178407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -595,9 +596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
-  BulletPrefab: {fileID: 0}
-  RandomMovementRange: 2
-  RandomMovementSpeed: 2
+  EnemyIdleBase: {fileID: 11400000, guid: e1a8c67567442564285928a0b038d189, type: 2}
+  EnemyChaseBase: {fileID: 11400000, guid: c8abcf14e95d44747bbccdabe2f2fd1b, type: 2}
+  EnemyAttackBase: {fileID: 11400000, guid: 1f2d5fc89ac5fdc469192864fd36c91e, type: 2}
 --- !u!1 &901482363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,7 +2213,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -12300,7 +12301,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
