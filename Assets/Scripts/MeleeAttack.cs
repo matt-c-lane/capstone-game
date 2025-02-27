@@ -32,6 +32,8 @@ public class MeleeAttack : Attack
         {
             DebugManager.Instance.RegisterMeleeAttack(origin, attackRadius);
         }
+
+        Debug.DrawRay(origin, direction * attackRadius, Color.red, 0.5f);
     }
 
     private IEnumerator PlayAttackAnimation(Player player, Sprite attackSprite, Vector2 spriteSize, float offsetDistance = 1f)
@@ -39,6 +41,7 @@ public class MeleeAttack : Attack
         GameObject swordObj = new GameObject("Sword Attack");
         SpriteRenderer renderer = swordObj.AddComponent<SpriteRenderer>();
         renderer.sprite = attackSprite;
+        renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 5;
 
         // Set sprite size
@@ -73,5 +76,11 @@ public class MeleeAttack : Attack
         }
 
         GameObject.Destroy(swordObj);
+    }
+
+    public void DrawDebug(Vector2 origin)
+    {
+        Gizmos.color = Color.red; // Melee attack area
+        Gizmos.DrawWireSphere(origin, attackRadius);
     }
 }
