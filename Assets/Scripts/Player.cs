@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -21,6 +23,13 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementInput;
 
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,6 +43,14 @@ public class Player : MonoBehaviour
         movementInput.x = Input.GetAxisRaw("Horizontal");
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized; // Prevent diagonal speed boost
+
+        //animation movement
+
+        if (movementInput != Vector2.zero) {
+            animator.SetFloat("moveX", movementInput.x);
+            animator.SetFloat("moveY", movementInput.y); 
+        }
+        
 
         // Sprinting (Shift Key)
         float speedModifier = Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
