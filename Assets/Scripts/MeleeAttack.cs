@@ -41,7 +41,7 @@ public class MeleeAttack : Attack
         GameObject swordObj = new GameObject("Sword Attack");
         SpriteRenderer renderer = swordObj.AddComponent<SpriteRenderer>();
         renderer.sprite = attackSprite;
-        renderer.sortingLayerID = 3;
+        renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 5;
 
         // Set sprite size

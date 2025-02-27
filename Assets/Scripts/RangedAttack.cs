@@ -37,7 +37,7 @@ public class RangedAttack : Attack
         GameObject weaponObj = new GameObject("Weapon Attack");
         SpriteRenderer renderer = weaponObj.AddComponent<SpriteRenderer>();
         renderer.sprite = weaponSprite;
-        renderer.sortingLayerID = 3;
+        renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 5;
 
         // Set sprite scale
@@ -55,7 +55,7 @@ public class RangedAttack : Attack
         GameObject projectileObj = new GameObject("Projectile");
         SpriteRenderer renderer = projectileObj.AddComponent<SpriteRenderer>();
         renderer.sprite = weapon.projectileSprite;
-        renderer.sortingLayerID = 3;
+        renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 6;
 
         // Set sprite scale
