@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class DebugManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DebugManager : MonoBehaviour
     private GameObject meleeDebugCircle;
 
     private LineRenderer lineRenderer; // For ranged attack visualization
+    
+    private List<(Vector2, float)> meleeAttacks = new List<(Vector2, float)>();
 
     private void Update()
     {
@@ -43,14 +46,7 @@ public class DebugManager : MonoBehaviour
 
     public void RegisterMeleeAttack(Vector2 origin, float radius)
     {
-        if (!showDebug) return;
-
-        // Destroy previous circle
-        if (meleeDebugCircle != null) Destroy(meleeDebugCircle);
-
-        // Create a new debug circle
-        meleeDebugCircle = Instantiate(debugCirclePrefab, origin, Quaternion.identity);
-        meleeDebugCircle.transform.localScale = new Vector3(radius * 2, radius * 2, 1);
+        meleeAttacks.Add((origin, radius));
     }
 
     public void RegisterRangedAttack(Vector2 origin, Vector2 direction, float attackRange)
@@ -60,5 +56,17 @@ public class DebugManager : MonoBehaviour
         Vector2 endPosition = origin + (direction.normalized * attackRange);
         lineRenderer.SetPosition(0, origin);
         lineRenderer.SetPosition(1, endPosition);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (meleeAttacks != null)
+        {
+            Gizmos.color = Color.red;
+            foreach (var attack in meleeAttacks)
+            {
+                Gizmos.DrawWireSphere(attack.Item1, attack.Item2);
+            }
+        }
     }
 }
