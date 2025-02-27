@@ -37,6 +37,7 @@ public class RangedAttack : Attack
         GameObject weaponObj = new GameObject("Weapon Attack");
         SpriteRenderer renderer = weaponObj.AddComponent<SpriteRenderer>();
         renderer.sprite = weaponSprite;
+        renderer.sortingLayerID = 3;
         renderer.sortingOrder = 5;
 
         // Set sprite scale
@@ -54,6 +55,7 @@ public class RangedAttack : Attack
         GameObject projectileObj = new GameObject("Projectile");
         SpriteRenderer renderer = projectileObj.AddComponent<SpriteRenderer>();
         renderer.sprite = weapon.projectileSprite;
+        renderer.sortingLayerID = 3;
         renderer.sortingOrder = 6;
 
         // Set sprite scale
@@ -61,15 +63,18 @@ public class RangedAttack : Attack
 
         projectileObj.transform.position = startPosition;
 
-        float distanceTraveled = 0f;
-        while (distanceTraveled < projectileRange)
+        Vector2 targetPosition = startPosition + (direction.normalized * projectileRange);
+        float travelTime = projectileRange / projectileSpeed; // Exact time to travel the distance
+
+        float elapsedTime = 0f;
+        while (elapsedTime < travelTime)
         {
-            float moveStep = projectileSpeed * Time.deltaTime;
-            projectileObj.transform.position += (Vector3)(direction * moveStep);
-            distanceTraveled += moveStep;
+            projectileObj.transform.position = Vector2.Lerp(startPosition, targetPosition, elapsedTime / travelTime);
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
+        projectileObj.transform.position = targetPosition; // Ensure it reaches the exact position
         GameObject.Destroy(projectileObj);
     }
 
