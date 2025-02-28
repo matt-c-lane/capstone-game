@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     // === Movement System ===
     public float moveSpeed = 5f;
     public float sprintMultiplier = 1.5f;
+
+    private bool isMoving;
     private Rigidbody2D rb;
     private Vector2 movementInput;
 
@@ -44,19 +46,23 @@ public class Player : MonoBehaviour
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized; // Prevent diagonal speed boost
 
-        //animation movement
+        //prevent Diaginal movement, for now
+        if (movementInput.x != 0) { movementInput.y = 0; }
 
-        if (movementInput != Vector2.zero) {
+        // Set isMoving based on input
+        isMoving = movementInput != Vector2.zero;
+
+        // Animation movement
+        if (isMoving) {
             animator.SetFloat("moveX", movementInput.x);
-            animator.SetFloat("moveY", movementInput.y); 
+            animator.SetFloat("moveY", movementInput.y);
         }
-        
+        animator.SetBool("isMoving", isMoving);
 
         // Sprinting (Shift Key)
         float speedModifier = Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
 
         rb.linearVelocity = movementInput * moveSpeed * speedModifier;
-
 
         // === Handle Attacks ===
         if (Input.GetMouseButtonDown(0) && equippedWeapon != null)
