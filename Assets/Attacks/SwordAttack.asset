@@ -15,6 +15,6 @@ MonoBehaviour:
   damage: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
-  attackRadius: 15
+    m_Bits: 1024
+  attackRadius: 2
   animationDuration: 0.2
