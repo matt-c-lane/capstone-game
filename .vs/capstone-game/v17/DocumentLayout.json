@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\capstone-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksinglestraightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksinglestraightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksinglestraightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyattackscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyattackscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\base\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +13,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\chase\\enemychasedirecttoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\chase\\enemychasedirecttoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\state machine\\concretestates\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "EnemyAttackSoBase.cs",
+              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSoBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSoBase.cs",
+              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSoBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSoBase.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T22:37:30.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EnemyIdleState.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyIdleState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyIdleState.cs",
@@ -50,19 +63,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyIdleState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T22:11:02.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemyChaseState.cs",
-              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
-              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T22:09:29.667Z"
+              "WhenOpened": "2025-02-27T22:11:02.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -74,7 +76,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Idle\\EnemyIdleRandomWander.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T22:06:51.88Z"
+              "WhenOpened": "2025-02-27T22:06:51.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,47 +87,48 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwCoAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T21:36:00.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnemyAttackScript.cs",
-              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyAttackScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyAttackScript.cs",
-              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyAttackScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyAttackScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EnemyChaseState.cs",
+              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
+              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\State Machine\\ConcreteStates\\EnemyChaseState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T22:13:04.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T22:09:29.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswH8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAA5wH8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T03:54:53.017Z"
+              "WhenOpened": "2025-02-27T03:54:53.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "EnemyChaseDirectToPlayer.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Chase\\EnemyChaseDirectToPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Chase\\EnemyChaseDirectToPlayer.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Chase\\EnemyChaseDirectToPlayer.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Chase\\EnemyChaseDirectToPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA3wAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T21:15:29.828Z"
+              "WhenOpened": "2025-02-27T21:15:29.828Z",
+              "EditorCaption": ""
             }
           ]
         }
