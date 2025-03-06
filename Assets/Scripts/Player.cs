@@ -4,9 +4,29 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // === Player Stats ===
+    private int _body = 0; // Don't access backing field directly, use body instead
+    private int bodyMod;
+    public int body { get{return _body+bodyMod;} private set{_body = value;} }
+    private int _wits = 0; // Don't access backing field directly, use wits instead
+    private int witsMod;
+    public int wits { get{return _wits+witsMod;} private set{_wits = value;} }
+    private int _mind = 0; // Don't access backing field directly, use mind instead
+    private int mindMod;
+    public int mind { get{return _mind+mindMod;} private set{_mind = value;} }
+
     // === Health System ===
     public int currentHealth { get; private set; }
-    public int maxHealth { get; private set; } = 100;
+    public int maxHealth { get; private set; } = 10;
+
+    // === Magic System ===
+    public int currentMana { get; private set; }
+    public int maxMana { get; private set; } = 10;
+
+    // === Progression System ===
+    public int lvl { get; private set; } = 1;
+    public int exp { get; private set; } = 0;
+    private int expNextLvl;
 
     // === Inventory System ===
     private Inventory inventory;
@@ -37,6 +57,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         inventory = new Inventory();
         currentHealth = maxHealth;
+        currentMana = maxMana;
+
     }
 
     void Update()
@@ -91,4 +113,7 @@ public class Player : MonoBehaviour
 
     // === Player CLass Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }
+
+    // === Player Stats Functions ===
+    public void SetAllStats(int body, int wits, int mind) { _body = body; _wits = wits; _mind = mind; }
 }
