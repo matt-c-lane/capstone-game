@@ -15,6 +15,6 @@ MonoBehaviour:
   damage: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   projectileRange: 5
   projectileSpeed: 10
