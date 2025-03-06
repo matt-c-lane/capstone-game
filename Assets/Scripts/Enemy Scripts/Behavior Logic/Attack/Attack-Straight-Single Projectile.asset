@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce66898cf67f6ee40b2cb05cd91dd71b, type: 3}
   m_Name: Attack-Straight-Single Projectile
   m_EditorClassIdentifier: 
-  BulletPrefab: {fileID: 0}
+  fireball: {fileID: 3332213938171263231, guid: 6a818e5910333bd4aae1e5aa88120f51, type: 3}
   _timeBetweenShots: 2
   _timeTillExit: 3
   _distanceToCountExit: 3
-  _bulletSpeed: 10
+  _bulletSpeed: 7

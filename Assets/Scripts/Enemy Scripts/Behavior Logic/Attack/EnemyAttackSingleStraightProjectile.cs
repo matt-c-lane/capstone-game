@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "Attack-Straight-Single Projectile", menuName = "Enemy Logic/Attack Logic/Single Straight Projectile")]
 public class NewMonoBehaviourScript : EnemyAttackSOBase
 {
-    [SerializeField]private Rigidbody2D BulletPrefab;
+    [SerializeField]private Rigidbody2D fireball;
 
     [SerializeField] private float _timeBetweenShots = 2f;
     [SerializeField] private float _timeTillExit = 3f;
@@ -40,7 +40,7 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
             _timer = 0f;
             Vector2 dir = (playerTransform.position - enemy.transform.position).normalized;
 
-            Rigidbody2D bullet = GameObject.Instantiate(BulletPrefab, enemy.transform.position, Quaternion.identity);
+            Rigidbody2D bullet = GameObject.Instantiate(fireball, enemy.transform.position, Quaternion.identity);
             bullet.linearVelocity = dir * _bulletSpeed;
         }
         if (Vector2.Distance(playerTransform.position, enemy.transform.position) > _distanceToCountExit)

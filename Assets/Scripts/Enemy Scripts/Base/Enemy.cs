@@ -146,4 +146,5 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
         IsWithinStrickingDistance = isWithinStrikingDistance;
     }
     #endregion
+
 }
