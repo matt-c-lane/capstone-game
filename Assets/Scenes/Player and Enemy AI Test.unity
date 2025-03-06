@@ -595,11 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f0fe3341681b54c9c96fdc087facaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  <MaxHealth>k__BackingField: 100
-=======
   <MaxHealth>k__BackingField: 1
->>>>>>> Stashed changes
   EnemyIdleBase: {fileID: 11400000, guid: e1a8c67567442564285928a0b038d189, type: 2}
   EnemyChaseBase: {fileID: 11400000, guid: c8abcf14e95d44747bbccdabe2f2fd1b, type: 2}
   EnemyAttackBase: {fileID: 11400000, guid: 1f2d5fc89ac5fdc469192864fd36c91e, type: 2}
