@@ -46,9 +46,6 @@ public class Player : MonoBehaviour
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized; // Prevent diagonal speed boost
 
-        //prevent Diaginal movement, for now
-        if (movementInput.x != 0) { movementInput.y = 0; }
-
         // Set isMoving based on input
         isMoving = movementInput != Vector2.zero;
 
