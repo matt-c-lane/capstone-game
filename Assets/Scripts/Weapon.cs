@@ -6,11 +6,11 @@ public abstract class Weapon : ScriptableObject
     public Sprite weaponIcon;
     public Attack attack;  // Reference to an Attack ScriptableObject
 
-    public void ExecuteAttack(Vector2 origin, Vector2 direction)
+    public void ExecuteAttack(Vector2 origin, Vector2 direction, int[] stats)
     {
         if (attack != null)
         {
-            attack.Execute(origin, direction);
+            attack.Execute(origin, direction, stats);
         }
         else
         {

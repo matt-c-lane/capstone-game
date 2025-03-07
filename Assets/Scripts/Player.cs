@@ -8,12 +8,16 @@ public class Player : MonoBehaviour
     private int _body = 0; // Don't access backing field directly, use body instead
     private int bodyMod;
     public int body { get{return _body+bodyMod;} private set{_body = value;} }
-    private int _wits = 0; // Don't access backing field directly, use wits instead
-    private int witsMod;
-    public int wits { get{return _wits+witsMod;} private set{_wits = value;} }
+    private int _luck = 0; // Don't access backing field directly, use wits instead
+    private int luckMod;
+    public int luck { get{return _luck+luckMod;} private set{_luck = value;} }
     private int _mind = 0; // Don't access backing field directly, use mind instead
     private int mindMod;
     public int mind { get{return _mind+mindMod;} private set{_mind = value;} }
+
+    // === Armor System ===
+    public int armor { get; private set; } //Physical attacks
+    public int shield { get; private set; } //Magic attacks
 
     // === Health System ===
     public int currentHealth { get; private set; }
@@ -90,7 +94,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && equippedWeapon != null)
         {
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            equippedWeapon.ExecuteAttack(transform.position, attackDirection);
+            equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {body, mind, luck});
         }
     }
 
@@ -115,5 +119,5 @@ public class Player : MonoBehaviour
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }
 
     // === Player Stats Functions ===
-    public void SetAllStats(int body, int wits, int mind) { _body = body; _wits = wits; _mind = mind; }
+    public void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
 }
