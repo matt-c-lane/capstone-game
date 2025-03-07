@@ -12,13 +12,13 @@ public class MeleeAttack : Attack
     public float attackRadius = 1.5f;
     public float animationDuration = 0.2f;
 
-    public override void Execute(Vector2 origin, Vector2 direction)
+    public override void Execute(Vector2 origin, Vector2 direction, int[] stats)
     {
         // Damage enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(origin, attackRadius, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>()?.TakeDamage(damage);
+            enemy.GetComponent<Enemy>()?.TakeDamage(damage, damageType, stats);
         }
 
         // Spawn the attack animation

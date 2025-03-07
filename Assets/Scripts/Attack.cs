@@ -8,6 +8,7 @@ public abstract class Attack : ScriptableObject
 {
     public int damage;
     public LayerMask enemyLayer;
+    public string damageType;
 
-    public abstract void Execute(Vector2 origin, Vector2 direction);
+    public abstract void Execute(Vector2 origin, Vector2 direction, int[] stats);
 }

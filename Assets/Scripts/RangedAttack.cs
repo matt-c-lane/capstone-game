@@ -10,7 +10,7 @@ public class RangedAttack : Attack
 {
     public float projectileRange = 5f;
     public float projectileSpeed = 10f;
-    public override void Execute(Vector2 origin, Vector2 direction)
+    public override void Execute(Vector2 origin, Vector2 direction, int[] stats)
     {
         RaycastHit2D[] hitEnemies = Physics2D.RaycastAll(origin, direction, projectileRange, enemyLayer);
         foreach (RaycastHit2D target in hitEnemies)
@@ -18,7 +18,7 @@ public class RangedAttack : Attack
             Enemy enemy = target.collider.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage, damageType, stats);
             }
         }
 
