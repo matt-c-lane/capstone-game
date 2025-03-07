@@ -8,20 +8,24 @@ public class Player : MonoBehaviour
     private int _body = 0; // Don't access backing field directly, use body instead
     private int bodyMod;
     public int body { get{return _body+bodyMod;} private set{_body = value;} }
-    private int _luck = 0; // Don't access backing field directly, use wits instead
-    private int luckMod;
-    public int luck { get{return _luck+luckMod;} private set{_luck = value;} }
     private int _mind = 0; // Don't access backing field directly, use mind instead
     private int mindMod;
     public int mind { get{return _mind+mindMod;} private set{_mind = value;} }
+    private int _luck = 0; // Don't access backing field directly, use wits instead
+    private int luckMod;
+    public int luck { get{return _luck+luckMod;} private set{_luck = value;} }
 
     // === Armor System ===
-    public int armor { get; private set; } //Physical attacks
-    public int shield { get; private set; } //Magic attacks
+    public int armor { get; private set; } = 1; //Physical attacks
+    public int shield { get; private set; } = 1; //Magic attacks
 
     // === Health System ===
     public int currentHealth { get; private set; }
     public int maxHealth { get; private set; } = 10;
+
+    // === Stamina System ===
+    public int currentStamina { get; private set; }
+    public int maxStamina { get; private set; } = 10;
 
     // === Magic System ===
     public int currentMana { get; private set; }
@@ -63,6 +67,9 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         currentMana = maxMana;
 
+        body = 10;
+        mind = 10;
+        luck = 10;
     }
 
     void Update()

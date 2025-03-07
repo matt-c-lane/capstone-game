@@ -16,8 +16,8 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsAggroed { get; set; }
     public bool IsWithinStrickingDistance { get; set; }
 
-    public int armor { get; private set; } //Physical attacks
-    public int shield { get; private set; } //Magic attacks
+    public int armor { get; private set; } = 1; //Physical attacks
+    public int shield { get; private set; } = 1; //Magic attacks
 
 
     public void Awake()
