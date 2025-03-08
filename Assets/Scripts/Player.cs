@@ -5,19 +5,20 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // === Player Stats ===
-    private int _body = 0; // Don't access backing field directly, use body instead
+    [SerializeField] private int _body = 1; // Don't access backing field directly, use body instead
     private int bodyMod;
     public int body { get{return _body+bodyMod;} private set{_body = value;} }
-    private int _mind = 0; // Don't access backing field directly, use mind instead
+    [SerializeField] private int _mind = 1; // Don't access backing field directly, use mind instead
     private int mindMod;
     public int mind { get{return _mind+mindMod;} private set{_mind = value;} }
-    private int _luck = 0; // Don't access backing field directly, use wits instead
+    [SerializeField] private int _luck = 1; // Don't access backing field directly, use luck instead
     private int luckMod;
     public int luck { get{return _luck+luckMod;} private set{_luck = value;} }
 
     // === Armor System ===
-    public int armor { get; private set; } = 1; //Physical attacks
-    public int shield { get; private set; } = 1; //Magic attacks
+    public int armor = 1; //Physical attacks, should never be zero
+    public int shield = 1; //Magic attacks, should never be zero
+    //public Wearable wearable;
 
     // === Health System ===
     public int currentHealth { get; private set; }
@@ -66,10 +67,6 @@ public class Player : MonoBehaviour
         inventory = new Inventory();
         currentHealth = maxHealth;
         currentMana = maxMana;
-
-        body = 10;
-        mind = 10;
-        luck = 10;
     }
 
     void Update()

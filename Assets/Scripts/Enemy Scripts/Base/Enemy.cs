@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 
 
@@ -16,8 +15,8 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsAggroed { get; set; }
     public bool IsWithinStrickingDistance { get; set; }
 
-    public int armor { get; private set; } = 1; //Physical attacks
-    public int shield { get; private set; } = 1; //Magic attacks
+    public int armor = 1; //Physical attacks, should never be zero
+    public int shield = 1; //Magic attacks, should never be zero
 
 
     public void Awake()
@@ -77,7 +76,7 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
         }
 
         damageCalc = (damageFactor*damage);
-        damage = (int)Math.Floor(damageCalc < 1 ? 1 : damageCalc);
+        damage = (int)System.Math.Floor(damageCalc < 1 ? 1 : damageCalc);
 
         CurrentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage!");

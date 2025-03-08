@@ -570,6 +570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 10
+  armor: 3
+  shield: 1
   EnemyIdleBase: {fileID: 11400000, guid: e1a8c67567442564285928a0b038d189, type: 2}
   EnemyChaseBase: {fileID: 11400000, guid: c8abcf14e95d44747bbccdabe2f2fd1b, type: 2}
   EnemyAttackBase: {fileID: 11400000, guid: 1f2d5fc89ac5fdc469192864fd36c91e, type: 2}
@@ -784,7 +786,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1114,7 +1116,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1664,7 +1666,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2025,16 +2027,16 @@ Tilemap:
     m_Data: {fileID: 1501037096, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
   - m_RefCount: 54
     m_Data: {fileID: 1062818900, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -2097229027, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 30537918, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -2097229027, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1377551845, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 938747506, guid: 6ce867bd4fc6da9409a0fba66042fde3, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 122
     m_Data:
@@ -12538,6 +12540,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3255496831004660300, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: _body
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733870073569318090, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: m_AnimatePhysics
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9207464537343717986, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
