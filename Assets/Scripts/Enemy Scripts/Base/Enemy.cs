@@ -51,17 +51,7 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
         StateMachine.CurrentState.PhysicsUpdate();
     }
     #region Health/Damage Functions
-    public void Damage(float damageAmount)
-    {
-        CurrentHealth -= damageAmount;
-
-        if (CurrentHealth <= 0f)
-        {
-            Die();
-        }
-    }
-
-    public void TakeDamage(int damage, string attack, int[] stats)
+    public void Damage(int damage, string attack, int[] stats)
     {
         float damageFactor = 1f;
         float damageCalc;
@@ -86,7 +76,6 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
             Die();
         }
     }
-
     private void Die()
     {
         Debug.Log($"{gameObject.name} has been defeated!");

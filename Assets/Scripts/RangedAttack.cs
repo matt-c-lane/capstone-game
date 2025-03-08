@@ -5,12 +5,44 @@ RangedAttack is the base class for all ranged attacks. This inherits from Attack
 In general, you should not inherit directly from Attack.
 Inherit from MeleeAttack or RangedAttack instead.
 */
+public enum AttackMode
+{
+    Hitscan,
+    Projectile
+}
+
 [CreateAssetMenu(fileName = "New Ranged Attack", menuName = "Attacks/Ranged Attack")]
 public class RangedAttack : Attack
 {
+    public AttackMode attackMode = AttackMode.Hitscan;
     public float projectileRange = 5f;
     public float projectileSpeed = 10f;
+    public PlayerProjectile projectilePrefab;
+
     public override void Execute(Vector2 origin, Vector2 direction, int[] stats)
+    {
+        if (attackMode == AttackMode.Hitscan)
+        {
+            PerformHitscanAttack(origin, direction, stats);
+        }
+        else if (attackMode == AttackMode.Projectile)
+        {
+            PerformProjectileAttack(origin, direction, stats);
+        }
+
+        Player player = GameObject.FindAnyObjectByType<Player>();
+        if (player != null && player.equippedWeapon is RangedWeapon rangedWeapon)
+        {
+            player.StartCoroutine(PlayAttackAnimation(player, rangedWeapon.weaponIcon, rangedWeapon.weaponSpriteSize));
+        }
+
+        if (DebugManager.Instance != null)
+        {
+            DebugManager.Instance.RegisterRangedAttack(origin, direction, projectileRange);
+        }
+    }
+
+    private void PerformHitscanAttack(Vector2 origin, Vector2 direction, int[] stats)
     {
         RaycastHit2D[] hitEnemies = Physics2D.RaycastAll(origin, direction, projectileRange, enemyLayer);
         foreach (RaycastHit2D target in hitEnemies)
@@ -18,21 +50,28 @@ public class RangedAttack : Attack
             Enemy enemy = target.collider.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(damage, damageType, stats);
+                enemy.Damage(damage, damageType, stats);
             }
         }
+    }
 
-        Player player = GameObject.FindAnyObjectByType<Player>();
-        if (player != null && player.equippedWeapon is RangedWeapon rangedWeapon)
+    private void PerformProjectileAttack(Vector2 origin, Vector2 direction, int[] stats)
+    {
+        if (projectilePrefab != null)
         {
-            player.StartCoroutine(PlayAttackAnimation(player, rangedWeapon.weaponIcon, rangedWeapon.weaponSpriteSize));
-            player.StartCoroutine(PlayProjectileAnimation(origin, direction, rangedWeapon));
+            PlayerProjectile projectile = Instantiate(projectilePrefab, origin, Quaternion.identity);
+            projectile.Initialize(
+                damage: damage,
+                lifetime: projectileRange / projectileSpeed,  // Ensure lifetime matches range
+                speed: projectileSpeed,
+                direction: direction.normalized,
+                damageType: damageType,
+                stats: stats
+            );
         }
-        
-        // Register for debug drawing
-        if (DebugManager.Instance != null)
+        else
         {
-            DebugManager.Instance.RegisterRangedAttack(origin, direction, projectileRange);
+            Debug.LogWarning("Projectile prefab is missing!");
         }
     }
 
@@ -44,9 +83,7 @@ public class RangedAttack : Attack
         renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 5;
 
-        // Set sprite scale
         weaponObj.transform.localScale = new Vector3(spriteSize.x, spriteSize.y, 1);
-
         weaponObj.transform.position = player.transform.position;
         weaponObj.transform.parent = player.transform;
 
@@ -54,37 +91,9 @@ public class RangedAttack : Attack
         GameObject.Destroy(weaponObj);
     }
 
-    private IEnumerator PlayProjectileAnimation(Vector2 startPosition, Vector2 direction, RangedWeapon weapon)
-    {
-        GameObject projectileObj = new GameObject("Projectile");
-        SpriteRenderer renderer = projectileObj.AddComponent<SpriteRenderer>();
-        renderer.sprite = weapon.projectileSprite;
-        renderer.sortingLayerID = SortingLayer.NameToID("Player");
-        renderer.sortingOrder = 6;
-
-        // Set sprite scale
-        projectileObj.transform.localScale = new Vector3(weapon.projectileSpriteSize.x, weapon.projectileSpriteSize.y, 1);
-
-        projectileObj.transform.position = startPosition;
-
-        Vector2 targetPosition = startPosition + (direction.normalized * projectileRange);
-        float travelTime = projectileRange / projectileSpeed; // Exact time to travel the distance
-
-        float elapsedTime = 0f;
-        while (elapsedTime < travelTime)
-        {
-            projectileObj.transform.position = Vector2.Lerp(startPosition, targetPosition, elapsedTime / travelTime);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        projectileObj.transform.position = targetPosition; // Ensure it reaches the exact position
-        GameObject.Destroy(projectileObj);
-    }
-
     public void DrawDebug(Vector2 origin, Vector2 direction)
     {
-        Gizmos.color = Color.blue; // Ranged attack area
+        Gizmos.color = Color.blue;
         Vector2 endPosition = origin + (direction.normalized * projectileRange);
         Gizmos.DrawLine(origin, endPosition);
     }

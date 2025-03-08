@@ -224,7 +224,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d0fbc5e5525ca4cbf9028ae51b6636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _body: 1
+  _mind: 1
+  _luck: 1
+  armor: 1
+  shield: 1
   equippedWeapon: {fileID: 11400000, guid: d52227b695779ea44ba412c1fae657a7, type: 2}
+  offWeapon: {fileID: 11400000, guid: 2d2e1afab126e5e4698a5fef6bc246b6, type: 2}
   moveSpeed: 3
   sprintMultiplier: 1.5
 --- !u!114 &7534466727404423187

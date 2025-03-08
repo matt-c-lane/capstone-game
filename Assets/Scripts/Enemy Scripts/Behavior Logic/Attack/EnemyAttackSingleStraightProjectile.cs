@@ -5,12 +5,14 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "Attack-Straight-Single Projectile", menuName = "Enemy Logic/Attack Logic/Single Straight Projectile")]
 public class NewMonoBehaviourScript : EnemyAttackSOBase
 {
-    [SerializeField]private Rigidbody2D fireball;
-
+    [SerializeField] private Projectile fireballPrefab;
     [SerializeField] private float _timeBetweenShots = 2f;
     [SerializeField] private float _timeTillExit = 3f;
     [SerializeField] private float _distanceToCountExit = 3f;
     [SerializeField] private float _bulletSpeed = 10f;
+    [SerializeField] private float _bulletLifetime = 3f;
+    [SerializeField] private int _bulletDamage = 10;
+    [SerializeField] private float _maxBulletDistance = 0f; // Optional for distance-based destruction
 
     private float _timer;
     private float _exitTimer;
@@ -38,11 +40,22 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
         if (_timer > _timeBetweenShots)
         {
             _timer = 0f;
+
+            // Calculate direction towards the player
             Vector2 dir = (playerTransform.position - enemy.transform.position).normalized;
 
-            Rigidbody2D bullet = GameObject.Instantiate(fireball, enemy.transform.position, Quaternion.identity);
-            bullet.linearVelocity = dir * _bulletSpeed;
+            // Instantiate the fireball
+            Projectile bullet = Instantiate(fireballPrefab, enemy.transform.position, Quaternion.identity);
+            bullet.Initialize(
+                damage: _bulletDamage,
+                lifetime: _bulletLifetime,
+                speed: _bulletSpeed,
+                direction: dir,
+                maxDistance: _maxBulletDistance
+            );
         }
+
+        // Exit Logic
         if (Vector2.Distance(playerTransform.position, enemy.transform.position) > _distanceToCountExit)
         {
             _exitTimer += Time.deltaTime;
@@ -56,6 +69,7 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
         {
             _exitTimer = 0f;
         }
+
         _timer += Time.deltaTime;
     }
     

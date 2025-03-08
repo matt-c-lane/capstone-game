@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
 
     // === Weapon System ===
     public Weapon equippedWeapon;
+    public Weapon offWeapon;
 
     // === Player Class System ===
     private PlayerClass chosenClass;
@@ -107,7 +108,7 @@ public class Player : MonoBehaviour
     public void DecreaseHealth(int amount) { currentHealth = Mathf.Max(currentHealth - amount, 0); if (currentHealth == 0) Die(); }
     public void IncreaseMaxHealth(int amount) { maxHealth += amount; currentHealth += amount; }
     public void DecreaseMaxHealth(int amount) { maxHealth = Mathf.Max(maxHealth - amount, 1); currentHealth = Mathf.Min(currentHealth, maxHealth); }
-    public void ApplyDamage(int damage, object enemy) { DecreaseHealth(damage); }
+    public void Damage(int damage) { DecreaseHealth(damage); Debug.Log($"Player took {damage} damage!"); }
 
     private void Die() { Debug.Log("Player has died!"); }
 
@@ -118,6 +119,7 @@ public class Player : MonoBehaviour
 
     // === Weapon Functions ===
     public void EquipWeapon(Weapon weapon) { equippedWeapon = weapon; Debug.Log($"Equipped {weapon.weaponName}"); }
+    public void SwapWeapon() { (equippedWeapon, offWeapon) = (offWeapon, equippedWeapon); }
 
     // === Player CLass Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }

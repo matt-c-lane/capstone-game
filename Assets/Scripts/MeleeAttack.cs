@@ -18,7 +18,7 @@ public class MeleeAttack : Attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(origin, attackRadius, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>()?.TakeDamage(damage, damageType, stats);
+            enemy.GetComponent<Enemy>()?.Damage(damage, damageType, stats);
         }
 
         // Spawn the attack animation
