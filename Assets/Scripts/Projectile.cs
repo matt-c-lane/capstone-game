@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    private float lifetime = 10f;
+    
     protected int damage;
     protected float speed;
-    protected float lifetime;
     protected float maxDistance;
     protected Vector2 direction;
 
     protected Vector2 _startPosition;
     protected float _timeAlive;
 
-    public void Initialize(int damage, float lifetime, float speed, Vector2 direction, float maxDistance = 0f)
+    public void Initialize(int damage, float speed, Vector2 direction, float maxDistance = 0f)
     {
         this.damage = damage;
-        this.lifetime = lifetime;
         this.speed = speed;
         this.direction = direction.normalized;
         this.maxDistance = maxDistance;

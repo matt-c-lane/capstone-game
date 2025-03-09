@@ -62,11 +62,11 @@ public class RangedAttack : Attack
             PlayerProjectile projectile = Instantiate(projectilePrefab, origin, Quaternion.identity);
             projectile.Initialize(
                 damage: damage,
-                lifetime: projectileRange / projectileSpeed,  // Ensure lifetime matches range
                 speed: projectileSpeed,
                 direction: direction.normalized,
                 damageType: damageType,
-                stats: stats
+                stats: stats,
+                maxDistance: projectileRange
             );
         }
         else

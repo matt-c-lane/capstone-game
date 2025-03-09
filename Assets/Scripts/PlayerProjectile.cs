@@ -5,10 +5,9 @@ public class PlayerProjectile : Projectile
     protected string damageType;
     protected int[] stats;
 
-    public void Initialize(int damage, float lifetime, float speed, Vector2 direction, string damageType, int[] stats, float maxDistance = 0f)
+    public void Initialize(int damage, float speed, Vector2 direction, string damageType, int[] stats, float maxDistance = 0f)
     {
         this.damage = damage;
-        this.lifetime = lifetime;
         this.speed = speed;
         this.direction = direction.normalized;
         this.maxDistance = maxDistance;
