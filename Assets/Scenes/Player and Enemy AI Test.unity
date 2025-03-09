@@ -12553,7 +12553,7 @@ PrefabInstance:
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: equippedWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: b891342b81b2c8f4091d55e24cb380c0, type: 2}
+      objectReference: {fileID: 11400000, guid: 2d2e1afab126e5e4698a5fef6bc246b6, type: 2}
     - target: {fileID: 8733870073569318090, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_AnimatePhysics
       value: 0

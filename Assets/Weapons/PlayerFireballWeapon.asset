@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: FIreball
   weaponIcon: {fileID: -6576632796305642518, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
-  attack: {fileID: 11400000, guid: 9497997e5e6441f44b1002ad7d7bcdcc, type: 2}
+  attack: {fileID: 11400000, guid: adb5c221a521d9f4694b72eeafe3eefe, type: 2}
   projectileSprite: {fileID: 6344278756735520964, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
   weaponSpriteSize: {x: 5, y: 5}
   projectileSpriteSize: {x: 3, y: 3}
-  projectilePrefab: {fileID: 8925994396407877377, guid: 1b8e43603fbb95444a189535454c8f4f, type: 3}

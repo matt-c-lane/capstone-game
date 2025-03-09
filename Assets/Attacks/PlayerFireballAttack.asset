@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26eb7895b343f2c46930517020316f3e, type: 3}
   m_Name: PlayerFireballAttack
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024

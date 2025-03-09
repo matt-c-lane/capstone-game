@@ -19,3 +19,4 @@ MonoBehaviour:
   damageType: physical
   attackRadius: 2
   animationDuration: 0.2
+  attackArcAngle: 90

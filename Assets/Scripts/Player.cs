@@ -101,6 +101,10 @@ public class Player : MonoBehaviour
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
             equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {body, mind, luck});
         }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            SwapWeapon();
+        }
     }
 
     // === Health Functions ===
@@ -119,7 +123,7 @@ public class Player : MonoBehaviour
 
     // === Weapon Functions ===
     public void EquipWeapon(Weapon weapon) { equippedWeapon = weapon; Debug.Log($"Equipped {weapon.weaponName}"); }
-    public void SwapWeapon() { (equippedWeapon, offWeapon) = (offWeapon, equippedWeapon); }
+    public void SwapWeapon() { (equippedWeapon, offWeapon) = (offWeapon, equippedWeapon); Debug.Log($"Weapons: {offWeapon}, {equippedWeapon}"); }
 
     // === Player CLass Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }
