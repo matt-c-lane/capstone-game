@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     // === Player Race & Class System ===
     private PlayerClass chosenClass; //Class the player chose
     private PowerPlayer classPower; //Power the player's class gives
+    public PlayerClass debugClass; //Sets the debug class
 
     // === Movement System ===
     public float moveSpeed = 5f; //Speed of the player
@@ -73,6 +74,7 @@ public class Player : MonoBehaviour
         inventory = new Inventory();
         currentHealth = maxHealth;
         currentMana = maxMana;
+        SetClass(debugClass);
     }
 
     void Update()
@@ -148,6 +150,8 @@ public class Player : MonoBehaviour
     // === Player Class Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; classPower = chosenClass.classPower; }
     private void UseClassPower() { classPower.Activate(this); }
+    public IEnumerator ClassPowerDuration(float duration = 1f) { yield return new WaitForSeconds(duration); classPower.Deactivate(); }
+    public IEnumerator ClassPowerCooldown(float cooldown = 1f) { yield return new WaitForSeconds(cooldown); classPower.EndCooldown(); }
 
     // === Player Stats Functions ===
     private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }

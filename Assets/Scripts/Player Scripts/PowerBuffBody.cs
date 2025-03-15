@@ -11,28 +11,24 @@ public class PowerBuffBody : PowerPlayer
 
     public override void Activate(Player player)
     {
-        if (!isActive)
+        if (!isActive || onCooldown)
         {
             this.player = player;
             isActive = true;
-            ApplyEffect();
-            player.StartCoroutine(BuffDuration());
+            ApplyBuff();
+            player.StartCoroutine(player.ClassPowerDuration(duration));
         }
     }
 
-    private IEnumerator BuffDuration()
+    public override void Deactivate()
     {
-        yield return new WaitForSeconds(duration);
-        Deactivate();
+        RemoveBuff();
+        isActive = false;
+        onCooldown = true;
+        player.StartCoroutine(player.ClassPowerCooldown(cooldown));
     }
-
-    private IEnumerator ActivateCooldown()
-    {
-        yield return new WaitForSeconds(cooldown);
-        onCooldown = false;
-    }
-
-    public override void Deactivate() { RemoveBuff(); isActive = false; onCooldown = true; }
+    
+    public override void EndCooldown() { onCooldown = false; }
     public void ApplyBuff() { player.ModBody(buff); }
     public void RemoveBuff() { player.ModBody(-buff); }
 }
