@@ -46,16 +46,15 @@ public class Player : MonoBehaviour
     public Weapon offWeapon; //Weapon the player has in the off-hand
 
     // === Player Race & Class System ===
-    private PlayerClass chosenClass; //Class the player chose
+    public PlayerClass chosenClass; //Class the player chose
     private PowerPlayer classPower; //Power the player's class gives
-    public PlayerClass debugClass; //Sets the debug class
 
     // === Movement System ===
     public float moveSpeed = 5f; //Speed of the player
     public float sprintMultiplier = 1.5f; //Multiplies moveSpeed while player is sprinting
 
     // === UI System ===
-    public UIManager uiManager;
+    public UIManager uiManager; //UI for the player
 
     private bool isMoving;
     private Rigidbody2D rb;
@@ -74,7 +73,7 @@ public class Player : MonoBehaviour
         inventory = new Inventory();
         currentHealth = maxHealth;
         currentMana = maxMana;
-        SetClass(debugClass);
+        SetClass(chosenClass);
     }
 
     void Update()
@@ -108,10 +107,12 @@ public class Player : MonoBehaviour
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
             equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {body, mind, luck});
         }
+        // === Swap Weapon ===
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             SwapWeapon();
         }
+        // === Activate Class Power ===
         if (Input.GetKeyDown(KeyCode.Q))
         {
             UseClassPower();
@@ -122,6 +123,9 @@ public class Player : MonoBehaviour
     public void ModBody(int amount) { bodyMod += amount; }
     public void ModMind(int amount) { mindMod += amount; }
     public void ModLuck(int amount) { luckMod += amount; }
+
+    // === Player Stats Functions ===
+    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
 
     // === Health Functions ===
     public void IncreaseHealth(int amount) { currentHealth = Mathf.Min(currentHealth + amount, maxHealth); }
@@ -152,7 +156,4 @@ public class Player : MonoBehaviour
     private void UseClassPower() { classPower.Activate(this); }
     public IEnumerator ClassPowerDuration(float duration = 1f) { yield return new WaitForSeconds(duration); classPower.Deactivate(); }
     public IEnumerator ClassPowerCooldown(float cooldown = 1f) { yield return new WaitForSeconds(cooldown); classPower.EndCooldown(); }
-
-    // === Player Stats Functions ===
-    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
 }

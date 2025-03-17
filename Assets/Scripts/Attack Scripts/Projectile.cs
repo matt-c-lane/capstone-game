@@ -3,8 +3,9 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private float lifetime = 10f;
-    
+
     protected int damage;
+    protected DamageType damageType;
     protected float speed;
     protected float maxDistance;
     protected Vector2 direction;
@@ -12,9 +13,10 @@ public class Projectile : MonoBehaviour
     protected Vector2 _startPosition;
     protected float _timeAlive;
 
-    public void Initialize(int damage, float speed, Vector2 direction, float maxDistance = 0f)
+    public void Initialize(int damage, DamageType damageType, float speed, Vector2 direction, float maxDistance = 0f)
     {
         this.damage = damage;
+        this.damageType = damageType;
         this.speed = speed;
         this.direction = direction.normalized;
         this.maxDistance = maxDistance;
