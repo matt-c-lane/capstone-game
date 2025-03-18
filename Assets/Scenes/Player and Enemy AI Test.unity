@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f0fe3341681b54c9c96fdc087facaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MaxHealth>k__BackingField: 10
+  <MaxHealth>k__BackingField: 100
   armor: 3
   shield: 1
   EnemyIdleBase: {fileID: 11400000, guid: e1a8c67567442564285928a0b038d189, type: 2}
@@ -12662,6 +12662,14 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1554066387}
+    - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: debugClass
+      value: 
+      objectReference: {fileID: 11400000, guid: ec288b7382092844cbbc03a32ba02dd0, type: 2}
+    - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: chosenClass
+      value: 
+      objectReference: {fileID: 11400000, guid: ec288b7382092844cbbc03a32ba02dd0, type: 2}
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: equippedWeapon
       value: 

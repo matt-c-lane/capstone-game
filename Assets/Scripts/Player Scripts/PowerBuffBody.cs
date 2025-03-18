@@ -9,9 +9,15 @@ public class PowerBuffBody : PowerPlayer
     private bool isActive = false;
     private bool onCooldown = false;
 
+    void Start()
+    {
+        isActive = false; 
+        onCooldown = false;
+    }
+
     public override void Activate(Player player)
     {
-        if (!isActive || onCooldown)
+        if (!isActive && !onCooldown)
         {
             this.player = player;
             isActive = true;
@@ -27,7 +33,7 @@ public class PowerBuffBody : PowerPlayer
         onCooldown = true;
         player.StartCoroutine(player.ClassPowerCooldown(cooldown));
     }
-    
+
     public override void EndCooldown() { onCooldown = false; }
     public void ApplyBuff() { player.ModBody(buff); }
     public void RemoveBuff() { player.ModBody(-buff); }

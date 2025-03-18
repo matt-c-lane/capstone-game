@@ -1,6 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum ClassTimer
+{
+    Active,
+    Cooldown
+}
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
@@ -9,6 +15,7 @@ public class UIManager : MonoBehaviour
     public Image manaBar;
     public Image staminaBar;
     public Image weaponIcon;
+    public Image classTimer;
 
     private void Awake()
     {
@@ -34,5 +41,11 @@ public class UIManager : MonoBehaviour
     public void UpdateWeapon(Weapon weapon)
     {
         weaponIcon.sprite = weapon.weaponIcon;
+    }
+    
+    public void UpdateClassTimer(ClassTimer mode, float timeElapsed, float timeTotal)
+    {
+        if (mode == ClassTimer.Active) { classTimer.fillAmount = 1 - (timeElapsed / timeTotal); }
+        else if (mode == ClassTimer.Cooldown) { classTimer.fillAmount = timeElapsed / timeTotal; }
     }
 }

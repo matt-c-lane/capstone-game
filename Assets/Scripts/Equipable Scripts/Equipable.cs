@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Equipable : ScriptableObject
+public abstract class Equipable : MonoBehaviour
 {
     //Empty
 }

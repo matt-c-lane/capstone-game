@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Weapon : Equipable
+public abstract class Weapon : ScriptableObject
 {
     public string weaponName;
     public Sprite weaponIcon;

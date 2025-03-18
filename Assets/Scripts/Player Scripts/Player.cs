@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         currentMana = maxMana;
         SetClass(chosenClass);
+        EquipWeapon(equippedWeapon);
     }
 
     void Update()
@@ -154,6 +155,32 @@ public class Player : MonoBehaviour
     // === Player Class Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; classPower = chosenClass.classPower; }
     private void UseClassPower() { classPower.Activate(this); }
-    public IEnumerator ClassPowerDuration(float duration = 1f) { yield return new WaitForSeconds(duration); classPower.Deactivate(); }
-    public IEnumerator ClassPowerCooldown(float cooldown = 1f) { yield return new WaitForSeconds(cooldown); classPower.EndCooldown(); }
+
+    public IEnumerator ClassPowerDuration(float duration)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            uiManager.UpdateClassTimer(ClassTimer.Active, elapsedTime, duration);
+            yield return null;
+        }
+
+        classPower.Deactivate();
+    }
+    
+    public IEnumerator ClassPowerCooldown(float cooldown)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < cooldown)
+        {
+            elapsedTime += Time.deltaTime;
+            uiManager.UpdateClassTimer(ClassTimer.Cooldown, elapsedTime, cooldown);
+            yield return null;
+        }
+
+        classPower.EndCooldown();
+    }
 }
