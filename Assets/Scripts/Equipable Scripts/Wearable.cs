@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Wearable : ScriptableObject
+public abstract class Wearable : Equipable
 {
     public string wearableName;
     public Sprite wearableIcon;

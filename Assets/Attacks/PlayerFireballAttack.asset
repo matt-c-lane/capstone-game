@@ -16,7 +16,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
-  damageType: magical
+  damageType: 1
   attackMode: 1
   projectileRange: 5
   projectileSpeed: 10
