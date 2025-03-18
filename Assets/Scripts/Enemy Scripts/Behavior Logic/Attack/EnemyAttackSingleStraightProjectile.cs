@@ -11,6 +11,7 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
     [SerializeField] private float _distanceToCountExit = 3f;
     [SerializeField] private float _bulletSpeed = 10f;
     [SerializeField] private int _bulletDamage = 10;
+    [SerializeField] private DamageType _bulletType = DamageType.Magical;
     [SerializeField] private float _maxBulletDistance = 0f; // Optional for distance-based destruction
 
     private float _timer;
@@ -47,6 +48,7 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
             Projectile bullet = Instantiate(fireballPrefab, enemy.transform.position, Quaternion.identity);
             bullet.Initialize(
                 damage: _bulletDamage,
+                damageType: _bulletType,
                 speed: _bulletSpeed,
                 direction: dir,
                 maxDistance: _maxBulletDistance

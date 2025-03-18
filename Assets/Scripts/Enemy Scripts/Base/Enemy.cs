@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
 {
 
@@ -51,22 +50,22 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
         StateMachine.CurrentState.PhysicsUpdate();
     }
     #region Health/Damage Functions
-    public void Damage(int damage, string attack, int[] stats)
+    public void Damage(int damage, DamageType damageType, int[] stats)
     {
-        float damageFactor = 1f;
-        float damageCalc;
+        float damageFactor = 1f; //Value attack damage is multiplied by
+        float damageCalc; //Final attack damage before rounding
 
-        if (attack == "physical")
+        if (damageType == DamageType.Physical)
         {
             damageFactor = (damage + stats[0])/armor;
         }
-        else if (attack == "magical")
+        else if (damageType == DamageType.Magical)
         {
             damageFactor = (damage + stats[1])/shield;
         }
 
         damageCalc = (damageFactor*damage);
-        damage = (int)System.Math.Floor(damageCalc < 1 ? 1 : damageCalc);
+        damage = (int)System.Math.Floor(damageCalc < 1 ? 1 : damageCalc); //All attacks deal at least 1 damage
 
         CurrentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage!");
