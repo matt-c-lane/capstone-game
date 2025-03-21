@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     public Image staminaBar;
     public Image weaponIcon;
     public Image classTimer;
+    public Image expBar;
 
     private void Awake()
     {
@@ -36,6 +37,11 @@ public class UIManager : MonoBehaviour
     public void UpdateStamina(float currentStamina, float maxStamina)
     {
         staminaBar.fillAmount = currentStamina / maxStamina;
+    }
+
+    public void UpdateExp(float currentExp, float maxExp)
+    {
+        expBar.fillAmount = currentExp / maxExp;
     }
 
     public void UpdateWeapon(Weapon weapon)

@@ -3,6 +3,7 @@ public class ShopItem : ScriptableObject
 {
     public string itemName;
     public string description;
+    public int quantity;
     public int price;
     public Sprite icon;
 

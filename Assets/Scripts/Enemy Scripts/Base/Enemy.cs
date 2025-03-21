@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public int armor = 1; //Physical attacks, should never be zero
     public int shield = 1; //Magic attacks, should never be zero
 
+    public int exp = 1; //Amount of experience the player gets
 
     public void Awake()
     {
@@ -78,7 +79,14 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     private void Die()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
+        GiveExp();
         Destroy(gameObject);
+    }
+    private void GiveExp()
+    {
+        Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player.leveler.GainExp(exp);
+        Debug.Log($"Player gained {exp} EXP!");
     }
     #endregion
     #region Movement Functions
