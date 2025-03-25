@@ -8,8 +8,6 @@ public class PowerBuffBody : PowerPlayer
     public float cooldown = 10f;
     // For some reason, isActive and onCooldown will set themselves to true, but only if they're private?
     // I have to leave them public, even though they really shouldn't be. Please be careful with this!
-    public bool isActive = false; //Do not edit in inspector
-    public bool onCooldown = false; //Do not edit in inspector
 
     void Awake()
     {
@@ -43,6 +41,6 @@ public class PowerBuffBody : PowerPlayer
     }
 
     public override void EndCooldown() { onCooldown = false; }
-    public void ApplyBuff() { player.ModBody(buff); }
-    public void RemoveBuff() { player.ModBody(-buff); }
+    public void ApplyBuff() { player.statser.ModBody(buff); }
+    public void RemoveBuff() { player.statser.ModBody(-buff); }
 }

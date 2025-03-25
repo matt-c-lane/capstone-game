@@ -18,3 +18,5 @@ MonoBehaviour:
   buff: 20
   duration: 5
   cooldown: 10
+  isActive: 1
+  onCooldown: 0

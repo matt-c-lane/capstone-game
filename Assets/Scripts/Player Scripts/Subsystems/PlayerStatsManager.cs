@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class PlayerStatsManager : PlayerManager
+{
+    // === Player Stats ===
+    [SerializeField] private int _body = 1; // Don't access backing field directly, use body instead
+    private int bodyMod;
+    public int body { get{return _body+bodyMod;} private set{_body = value;} } //Used to make physical attacks
+    [SerializeField] private int _mind = 1; // Don't access backing field directly, use mind instead
+    private int mindMod;
+    public int mind { get{return _mind+mindMod;} private set{_mind = value;} } //Used to make magical attacks
+    [SerializeField] private int _luck = 1; // Don't access backing field directly, use luck instead
+    private int luckMod;
+    public int luck { get{return _luck+luckMod;} private set{_luck = value;} } //Used for crit chance
+
+    public PlayerStatsManager(Player player)
+    {
+        this.player = player;
+    }
+    
+    // === Stats Functions ===
+    public void ModBody(int amount) { bodyMod += amount; }
+    public void ModMind(int amount) { mindMod += amount; }
+    public void ModLuck(int amount) { luckMod += amount; }
+    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
+}

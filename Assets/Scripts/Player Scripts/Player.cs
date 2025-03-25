@@ -11,31 +11,13 @@ public enum PlayerStats
 
 public class Player : MonoBehaviour
 {
-    // === Player Stats ===
-    [SerializeField] private int _body = 1; // Don't access backing field directly, use body instead
-    private int bodyMod;
-    public int body { get{return _body+bodyMod;} private set{_body = value;} } //Used to make physical attacks
-    [SerializeField] private int _mind = 1; // Don't access backing field directly, use mind instead
-    private int mindMod;
-    public int mind { get{return _mind+mindMod;} private set{_mind = value;} } //Used to make magical attacks
-    [SerializeField] private int _luck = 1; // Don't access backing field directly, use luck instead
-    private int luckMod;
-    public int luck { get{return _luck+luckMod;} private set{_luck = value;} } //Used for crit chance
-
     // === Player Subsystems ===
     public UIManager uiManager; //UI for the player
     public PlayerLevelManager leveler;
     public PlayerHealthManager healther;
     public PlayerManaManager manaer;
-
-    // === Armor System ===
-    public int armor = 1; //Protects against physical attacks, should never be zero
-    public int shield = 1; //Protects against magical attacks, should never be zero
-    public Wearable wearable; //Armor or clothes worn by player
-
-    // === Stamina System ===
-    public int currentStamina { get; private set; }
-    public int maxStamina { get; private set; } = 10; //Player's max stamina, used by weapons
+    public PlayerArmorManager armorer;
+    public PlayerStatsManager statser;
 
     // === Inventory System ===
     private Inventory inventory; //Player's inventory
@@ -75,6 +57,14 @@ public class Player : MonoBehaviour
         leveler = new PlayerLevelManager(this);
         healther = new PlayerHealthManager(this);
         manaer = new PlayerManaManager(this);
+        armorer = new PlayerArmorManager(this);
+        statser = new PlayerStatsManager(this);
+    }
+
+    void OnApplicationQuit()
+    {
+        classPower.isActive = false;
+        classPower.onCooldown = false;
     }
 
     void Update()
@@ -106,7 +96,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && equippedWeapon != null)
         {
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {body, mind, luck});
+            equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {statser.body, statser.mind, statser.luck});
         }
         // === Swap Weapon ===
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -119,14 +109,6 @@ public class Player : MonoBehaviour
             UseClassPower();
         }
     }
-
-    // === Stats Functions ===
-    public void ModBody(int amount) { bodyMod += amount; }
-    public void ModMind(int amount) { mindMod += amount; }
-    public void ModLuck(int amount) { luckMod += amount; }
-
-    // === Player Stats Functions ===
-    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
 
     public void Defeat() { Die(); }
     private void Die() { Debug.Log("Player has died!"); }
