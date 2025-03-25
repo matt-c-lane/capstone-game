@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb612152bc48742bda195e3ef6be9e, type: 3}
   m_Name: TestBodyBuff
   m_EditorClassIdentifier: 
-  powerName: 
-  description: 
+  powerName: Player Body Buff
+  description: Increases the Player's Body stat for 5 seconds.
   player: {fileID: 0}
   buff: 20
   duration: 5

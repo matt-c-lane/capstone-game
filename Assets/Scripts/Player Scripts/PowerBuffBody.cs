@@ -6,8 +6,16 @@ public class PowerBuffBody : PowerPlayer
     public int buff;
     public float duration = 5f;
     public float cooldown = 10f;
-    private bool isActive = false;
-    private bool onCooldown = false;
+    // For some reason, isActive and onCooldown will set themselves to true, but only if they're private?
+    // I have to leave them public, even though they really shouldn't be. Please be careful with this!
+    public bool isActive = false; //Do not edit in inspector
+    public bool onCooldown = false; //Do not edit in inspector
+
+    void Awake()
+    {
+        isActive = false; 
+        onCooldown = false;
+    }
 
     void Start()
     {
