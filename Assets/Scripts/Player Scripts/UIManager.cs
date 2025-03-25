@@ -13,7 +13,6 @@ public class UIManager : MonoBehaviour
 
     public Image healthBar;
     public Image manaBar;
-    public Image staminaBar;
     public Image weaponIcon;
     public Image classTimer;
     public Image expBar;
@@ -32,11 +31,6 @@ public class UIManager : MonoBehaviour
     public void UpdateMana(float currentMana, float maxMana)
     {
         manaBar.fillAmount = currentMana / maxMana;
-    }
-
-    public void UpdateStamina(float currentStamina, float maxStamina)
-    {
-        staminaBar.fillAmount = currentStamina / maxStamina;
     }
 
     public void UpdateExp(float currentExp, float maxExp)

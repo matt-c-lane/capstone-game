@@ -17,6 +17,6 @@ MonoBehaviour:
   _timeTillExit: 3
   _distanceToCountExit: 3
   _bulletSpeed: 7
-  _bulletLifetime: 3
   _bulletDamage: 2
+  _bulletType: 1
   _maxBulletDistance: 0
