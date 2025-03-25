@@ -229,10 +229,13 @@ MonoBehaviour:
   _luck: 1
   armor: 1
   shield: 1
+  wearable: {fileID: 0}
   equippedWeapon: {fileID: 11400000, guid: d52227b695779ea44ba412c1fae657a7, type: 2}
   offWeapon: {fileID: 11400000, guid: 2d2e1afab126e5e4698a5fef6bc246b6, type: 2}
+  chosenClass: {fileID: 11400000, guid: ec288b7382092844cbbc03a32ba02dd0, type: 2}
   moveSpeed: 3
   sprintMultiplier: 1.5
+  uiManager: {fileID: 0}
 --- !u!114 &7534466727404423187
 MonoBehaviour:
   m_ObjectHideFlags: 0
