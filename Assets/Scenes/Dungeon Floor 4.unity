@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d22d2d0c35ff8408c7c1a063cac4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 3
+  sceneBuildIndex: 4
 --- !u!61 &1261024760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1174,7 +1174,7 @@ Transform:
   m_GameObject: {fileID: 1261024757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -203.5, y: 54.5, z: -0.68072975}
+  m_LocalPosition: {x: -206, y: 56, z: -0.68072975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
