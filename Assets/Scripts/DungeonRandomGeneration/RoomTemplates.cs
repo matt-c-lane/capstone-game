@@ -9,8 +9,10 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] leftRooms;
     public GameObject[] rightRooms;
     public GameObject closedRooms;
-
     public List<GameObject> rooms;
+    public float waitTime;
+    private bool SpawnStairs;
+    public GameObject Stairs;
     void Start()
     {
         // Check for missing room prefabs
@@ -22,6 +24,20 @@ public class RoomTemplates : MonoBehaviour
         if (closedRooms == null)
         {
             Debug.LogError("Closed room prefab is missing in RoomTemplates!");
+        }
+    }
+    void Update()
+    {
+        if (waitTime <= 0 && SpawnStairs == false){
+            for (int i = 0; i < rooms.Count; i++){
+                if (i == rooms.Count-1) {
+                    Instantiate(Stairs, rooms[i].transform.position, Quaternion.identity);
+                    SpawnStairs = true;
+                }
+            }
+        }
+        else {
+            waitTime -= Time.deltaTime;
         }
     }
 }

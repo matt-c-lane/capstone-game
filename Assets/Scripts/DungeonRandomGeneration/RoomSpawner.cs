@@ -82,7 +82,6 @@ public class RoomSpawner : MonoBehaviour
         {
             Instantiate(selectedRoom, transform.position, selectedRoom.transform.rotation);
             spawned = true;
-          
         }
         else
         {
