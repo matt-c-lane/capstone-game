@@ -15572,7 +15572,7 @@ PrefabInstance:
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: offWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: d52227b695779ea44ba412c1fae657a7, type: 2}
+      objectReference: {fileID: -2088579146428175737, guid: beb39b7171a73bc438b76a0b469f01e7, type: 3}
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: uiManager
       value: 
@@ -15588,7 +15588,7 @@ PrefabInstance:
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: equippedWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 2d2e1afab126e5e4698a5fef6bc246b6, type: 2}
+      objectReference: {fileID: 5403203845410613805, guid: 94febb02ef4ee614abcd5c27293dc49b, type: 3}
     - target: {fileID: 8733870073569318090, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_AnimatePhysics
       value: 0
