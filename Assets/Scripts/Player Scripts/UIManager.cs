@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
     }
 
     void Update() {
-        //if (Input.GetKeyDown("escape")) ToggleStats();
+        if (Input.GetKeyDown("escape")) ToggleStats();
     }
 
     public void UpdateHealth(float currentHealth, float maxHealth)
@@ -59,11 +59,10 @@ public class UIManager : MonoBehaviour
     {
         uiStats.UpdateStats(b, m, l);
     }
-/*
+
     private void ToggleStats()
     {
         statsActive = !statsActive;
-        uiStats.SetActive(statsActive);
+        uiStats.GetComponent<Canvas>().enabled = statsActive;
     }
-*/
 }
