@@ -10,6 +10,8 @@ public enum ClassTimer
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
+    public UIPlayerStats uiStats;
+    private bool statsActive = false;
 
     public Image healthBar;
     public Image manaBar;
@@ -21,6 +23,10 @@ public class UIManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+    }
+
+    void Update() {
+        //if (Input.GetKeyDown("escape")) ToggleStats();
     }
 
     public void UpdateHealth(float currentHealth, float maxHealth)
@@ -48,4 +54,16 @@ public class UIManager : MonoBehaviour
         if (mode == ClassTimer.Active) { classTimer.fillAmount = 1 - (timeElapsed / timeTotal); }
         else if (mode == ClassTimer.Cooldown) { classTimer.fillAmount = timeElapsed / timeTotal; }
     }
+
+    public void UpdateStats(int b, int m, int l)
+    {
+        uiStats.UpdateStats(b, m, l);
+    }
+/*
+    private void ToggleStats()
+    {
+        statsActive = !statsActive;
+        uiStats.SetActive(statsActive);
+    }
+*/
 }
