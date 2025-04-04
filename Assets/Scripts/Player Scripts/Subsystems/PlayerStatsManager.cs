@@ -19,8 +19,9 @@ public class PlayerStatsManager : PlayerManager
     }
     
     // === Stats Functions ===
-    public void ModBody(int amount) { bodyMod += amount; }
-    public void ModMind(int amount) { mindMod += amount; }
-    public void ModLuck(int amount) { luckMod += amount; }
-    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; }
+    public void ModBody(int amount) { bodyMod += amount; UpdateUI(); }
+    public void ModMind(int amount) { mindMod += amount; UpdateUI(); }
+    public void ModLuck(int amount) { luckMod += amount; UpdateUI(); }
+    private void SetAllStats(int body, int luck, int mind) { _body = body; _luck = luck; _mind = mind; UpdateUI(); }
+    private void UpdateUI() { player.uiManager.UpdateStats(body, mind, luck); }
 }

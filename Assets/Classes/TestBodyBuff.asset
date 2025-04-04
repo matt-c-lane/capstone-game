@@ -15,8 +15,8 @@ MonoBehaviour:
   powerName: Player Body Buff
   description: Increases the Player's Body stat for 5 seconds.
   player: {fileID: 0}
+  isActive: 0
+  onCooldown: 0
   buff: 20
   duration: 5
   cooldown: 10
-  isActive: 1
-  onCooldown: 0
