@@ -13,9 +13,19 @@ public class PlayerStatsManager : PlayerManager
     private int luckMod;
     public int luck { get{return _luck+luckMod;} private set{_luck = value;} } //Used for crit chance
 
+    public static bool assigned = false; //Have the stats been assigned by a PointBuyManager?
+
     public PlayerStatsManager(Player player)
     {
         this.player = player;
+        if (!PlayerStatsManager.assigned)
+        {
+            this.body = PointBuyManager.bodyPoints;
+            this.mind = PointBuyManager.mindPoints;
+            this.luck = PointBuyManager.luckPoints;
+            PlayerStatsManager.assigned = true;
+        }
+
     }
     
     // === Stats Functions ===
