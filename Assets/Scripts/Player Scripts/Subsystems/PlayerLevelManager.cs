@@ -12,7 +12,6 @@ public class PlayerLevelManager : PlayerManager
     public PlayerLevelManager(Player player)
     {
         this.player = player;
-        Debug.Log("Created level manager");
     }
 
     // === Progression Fuctions ===

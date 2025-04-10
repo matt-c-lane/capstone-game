@@ -19,6 +19,9 @@ public class Player : MonoBehaviour
     public PlayerArmorManager armorer;
     public PlayerStatsManager statser;
 
+    // === Gold System ===
+    public Wallet wallet;
+
     // === Inventory System ===
     private Inventory inventory; //Player's inventory
 
@@ -59,6 +62,8 @@ public class Player : MonoBehaviour
         manaer = new PlayerManaManager(this);
         armorer = new PlayerArmorManager(this);
         statser = new PlayerStatsManager(this);
+
+        uiManager.UpdateStats(statser.body, statser.mind, statser.luck);
     }
 
     void OnApplicationQuit()

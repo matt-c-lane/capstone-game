@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Ranged Weapon", menuName = "Weapons/Ranged Weapon")]
 public class RangedWeapon : Weapon
 {
     public Sprite projectileSprite;
