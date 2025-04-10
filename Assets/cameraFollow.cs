@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public float FollowSpeed = 2f;
-    public Transform target;
+    Transform player;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        if (target != null) // Ensure target exists to prevent errors
-        {   // camera speed
-            Vector3 newPos = new Vector3(target.position.x, target.position.y, -10f);
-            transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+        // Find the player object by name
+        player = GameObject.Find("Player").transform;
+
+        // Enable the depth texture mode for the camera
+        Camera.main.depthTextureMode = DepthTextureMode.Depth;
+    }
+
+    // LateUpdate is called once per frame after Update
+    void LateUpdate()
+    {
+        if (player != null)
+        {
+            transform.position = new Vector3(player.position.x, player.position.y, -10);
         }
     }
 }

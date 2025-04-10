@@ -10,17 +10,17 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - 
-  - 
-  - 
   - Room
+  - 
+  - FogOfWarMain
+  - FogOfWarSecondary
+  - Player
   - Enemies
-  - 
-  - 
-  - 
+  - Stairs
   - 
   - 
   - 
@@ -46,11 +46,20 @@ TagManager:
   - name: Background
     uniqueID: 2335930929
     locked: 0
+  - name: Secondary
+    uniqueID: 757385191
+    locked: 0
   - name: Foreground
     uniqueID: 2796601033
     locked: 0
   - name: Player
     uniqueID: 2853960525
+    locked: 0
+  - name: Stairs
+    uniqueID: 275248211
+    locked: 0
+  - name: FogOfWar
+    uniqueID: 1990252681
     locked: 0
   m_RenderingLayers:
   - Default
