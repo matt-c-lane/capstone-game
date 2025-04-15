@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     public PlayerStatsManager statser;
 
     // === Gold System ===
-    public Wallet wallet;
+    // public Wallet wallet;
 
     // === Inventory System ===
     private Inventory inventory; //Player's inventory
@@ -86,7 +86,8 @@ public class Player : MonoBehaviour
         isMoving = movementInput != Vector2.zero;
 
         // Animation movement
-        if (isMoving) {
+        if (isMoving)
+        {
             animator.SetFloat("moveX", movementInput.x);
             animator.SetFloat("moveY", movementInput.y);
         }
@@ -101,7 +102,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && equippedWeapon != null)
         {
             Vector2 attackDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] {statser.body, statser.mind, statser.luck});
+            equippedWeapon.ExecuteAttack(transform.position, attackDirection, new int[] { statser.body, statser.mind, statser.luck });
         }
         // === Swap Weapon ===
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -144,7 +145,7 @@ public class Player : MonoBehaviour
 
         classPower.Deactivate();
     }
-    
+
     public IEnumerator ClassPowerCooldown(float cooldown)
     {
         float elapsedTime = 0f;

@@ -15,8 +15,8 @@ MonoBehaviour:
   damage: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 1024
-  damageType: physical
+    m_Bits: 4096
+  damageType: 0
   attackRadius: 2
   animationDuration: 0.2
   attackArcAngle: 90
