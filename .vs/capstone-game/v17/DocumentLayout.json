@@ -39,7 +39,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EnemyAttackSingleStraightProjectile.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
