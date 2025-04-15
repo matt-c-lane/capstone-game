@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     public PlayerStatsManager statser;
 
     // === Gold System ===
-    public Wallet wallet;
+    //public Wallet wallet;
 
     // === Inventory System ===
     private Inventory inventory; //Player's inventory
@@ -78,9 +78,6 @@ public class Player : MonoBehaviour
         movementInput.x = Input.GetAxisRaw("Horizontal");
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized;
-
-        //prevent Diaginal movement, for now
-        //if (movementInput.x != 0) { movementInput.y = 0; }
 
         // Set isMoving based on input
         isMoving = movementInput != Vector2.zero;

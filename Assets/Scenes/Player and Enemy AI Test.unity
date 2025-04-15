@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 40185663}
   - component: {fileID: 40185665}
   - component: {fileID: 40185664}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 56656522}
   - component: {fileID: 56656524}
   - component: {fileID: 56656523}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -643,8 +643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e13dfa3dbc3374799022f8a28dd527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowSpeed: 2
-  target: {fileID: 7819054336191291809}
 --- !u!114 &190854498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +774,7 @@ GameObject:
   - component: {fileID: 226813619}
   - component: {fileID: 226813618}
   - component: {fileID: 226813617}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +915,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -958,7 +956,7 @@ GameObject:
   - component: {fileID: 274816525}
   - component: {fileID: 274816527}
   - component: {fileID: 274816526}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1062,7 @@ GameObject:
   - component: {fileID: 331273741}
   - component: {fileID: 331273743}
   - component: {fileID: 331273742}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1145,7 @@ GameObject:
   - component: {fileID: 428178406}
   - component: {fileID: 428178405}
   - component: {fileID: 428178409}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1267,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -1331,7 +1329,7 @@ GameObject:
   - component: {fileID: 437578252}
   - component: {fileID: 437578251}
   - component: {fileID: 437578250}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1472,7 +1470,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -1594,7 +1592,7 @@ GameObject:
   - component: {fileID: 529674007}
   - component: {fileID: 529674009}
   - component: {fileID: 529674008}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1677,7 +1675,7 @@ GameObject:
   - component: {fileID: 570486411}
   - component: {fileID: 570486410}
   - component: {fileID: 570486409}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1818,7 +1816,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -1857,7 +1855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679411176}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,7 +1890,7 @@ GameObject:
   - component: {fileID: 783004540}
   - component: {fileID: 783004542}
   - component: {fileID: 783004541}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1973,7 +1971,7 @@ GameObject:
   - component: {fileID: 800140124}
   - component: {fileID: 800140126}
   - component: {fileID: 800140125}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,7 +2075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 820259912}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2112,7 +2110,7 @@ GameObject:
   - component: {fileID: 821647287}
   - component: {fileID: 821647289}
   - component: {fileID: 821647288}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2193,7 +2191,7 @@ GameObject:
   - component: {fileID: 854938764}
   - component: {fileID: 854938766}
   - component: {fileID: 854938765}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2272,7 +2270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 892371597}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2483,9 +2481,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 529817579
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1959036367
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -3813,7 +3811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 945899979}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3850,7 +3848,7 @@ GameObject:
   - component: {fileID: 995398606}
   - component: {fileID: 995398605}
   - component: {fileID: 995398604}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3991,7 +3989,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -4032,7 +4030,7 @@ GameObject:
   - component: {fileID: 1076541795}
   - component: {fileID: 1076541796}
   - component: {fileID: 1076541797}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4194,7 +4192,7 @@ GameObject:
   - component: {fileID: 1206604403}
   - component: {fileID: 1206604405}
   - component: {fileID: 1206604404}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4275,7 +4273,7 @@ GameObject:
   - component: {fileID: 1480476383}
   - component: {fileID: 1480476385}
   - component: {fileID: 1480476384}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4550,8 +4548,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -750721035
-  m_SortingLayer: 0
+  m_SortingLayerID: -1959036367
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -14494,7 +14492,7 @@ GameObject:
   - component: {fileID: 1499735509}
   - component: {fileID: 1499735510}
   - component: {fileID: 1499735511}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14586,7 +14584,7 @@ GameObject:
   - component: {fileID: 1567981394}
   - component: {fileID: 1567981396}
   - component: {fileID: 1567981395}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14736,7 +14734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1699196126}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14771,7 +14769,7 @@ GameObject:
   - component: {fileID: 1709463647}
   - component: {fileID: 1709463649}
   - component: {fileID: 1709463648}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14885,7 +14883,7 @@ GameObject:
   - component: {fileID: 1783251015}
   - component: {fileID: 1783251017}
   - component: {fileID: 1783251016}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15048,7 +15046,7 @@ GameObject:
   - component: {fileID: 1955318165}
   - component: {fileID: 1955318167}
   - component: {fileID: 1955318166}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15129,7 +15127,7 @@ GameObject:
   - component: {fileID: 1968679648}
   - component: {fileID: 1968679650}
   - component: {fileID: 1968679649}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15208,7 +15206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1979368407}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15245,7 +15243,7 @@ GameObject:
   - component: {fileID: 2144009648}
   - component: {fileID: 2144009647}
   - component: {fileID: 2144009646}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Slime (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15386,7 +15384,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1441006771
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1307573951, guid: 37d5b93ff10721f4a81d667152697b4c, type: 3}
   m_Color: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
@@ -15508,6 +15506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9096460390106873723, guid: beb476b174a547c42a242e2b6fb181c6, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15521,6 +15523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 760971330320053618, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3255496831004660300, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.881396
@@ -15561,6 +15567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644920637415068805, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7423609679115309790, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: _body
       value: 15
@@ -15599,18 +15609,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9207464537343717986, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 760971330320053618, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
---- !u!4 &7819054336191291809 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3255496831004660300, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
-  m_PrefabInstance: {fileID: 7009759125059532167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -15623,8 +15629,8 @@ SceneRoots:
   - {fileID: 570486413}
   - {fileID: 437578254}
   - {fileID: 2144009650}
-  - {fileID: 1608608822}
   - {fileID: 7009759125059532167}
+  - {fileID: 1608608822}
   - {fileID: 190854501}
   - {fileID: 1955190079}
   - {fileID: 5600571396099921494}
