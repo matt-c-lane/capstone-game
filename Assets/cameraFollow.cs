@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    Transform player;
+    public Transform target;
+    public float smoothing;
+    public Vector2 maxPosition;
+    public Vector2 minPosition;
 
     void Start()
     {
-        // Find the player object by name
-        player = GameObject.Find("Player").transform;
 
-        // Enable the depth texture mode for the camera
-        Camera.main.depthTextureMode = DepthTextureMode.Depth;
     }
 
     // LateUpdate is called once per frame after Update
     void LateUpdate()
     {
-        if (player != null)
+        if (transform.position != target.position)
         {
-            transform.position = new Vector3(player.position.x, player.position.y, -10);
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+            
+            
+
+            targetPosition.x = Mathf.Clamp(target.position.x, minPosition.x, maxPosition.x);
+            targetPosition.y = Mathf.Clamp(target.position.y, minPosition.y, maxPosition.y);
         }
     }
 }
