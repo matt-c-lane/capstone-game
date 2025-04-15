@@ -690,6 +690,45 @@ MonoBehaviour:
   armor: 1
   shield: 1
   exp: 1
+  EnemyIdleBase: {fileID: 11400000, guid: e1a8c67567442564285928a0b038d189, type: 2}
+  EnemyChaseBase: {fileID: 11400000, guid: c8abcf14e95d44747bbccdabe2f2fd1b, type: 2}
+  EnemyAttackBase: {fileID: 11400000, guid: 1f2d5fc89ac5fdc469192864fd36c91e, type: 2}
+--- !u!1 &618721955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618721960}
+  - component: {fileID: 618721959}
+  - component: {fileID: 618721958}
+  - component: {fileID: 618721957}
+  - component: {fileID: 618721956}
+  m_Layer: 10
+  m_Name: DragonBoss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &618721956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618721955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6761a3d93144f4a867ede5951cb8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxHealth>k__BackingField: 1000
+  armor: 1
+  shield: 1
+  exp: 1
   EnemyIdleBase: {fileID: 11400000, guid: e90e15d1f8795e94dbd10227297bdca8, type: 2}
   EnemyChaseBase: {fileID: 11400000, guid: 0c0f103845c7a4a47b7da801b9ae6104, type: 2}
   EnemyAttackBase: {fileID: 11400000, guid: 914d26c053fb90147ad3af4713c4ebb6, type: 2}
