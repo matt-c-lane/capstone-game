@@ -1,8 +1,8 @@
 //hi
-/*
+
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -73,4 +73,3 @@ public class Player : MonoBehaviour
     // === Player CLass Functions ===
     public void SetClass(PlayerClass selectedClass) { chosenClass = selectedClass; Debug.Log($"Class set to {selectedClass.name}"); }
 }
-*/
