@@ -71,7 +71,7 @@ public class PointBuyManager : MonoBehaviour
     {
         if (availablePoints == 0)
         {
-            SceneManager.LoadScene("Player and Enemy AI Test");
+            SceneManager.LoadScene("Dungeon Floor 1");
         }
     }
 }
