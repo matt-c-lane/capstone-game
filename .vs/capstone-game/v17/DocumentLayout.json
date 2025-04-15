@@ -3,25 +3,16 @@
   "WorkspaceRootPath": "D:\\capstone-game\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\base\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\base\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\idle\\enemyidlerandomwander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\chase\\enemychasedirecttoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\chase\\enemychasedirecttoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> parent of 8073b59 (updating from main)
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksinglestraightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\attack\\enemyattacksinglestraightprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\dragonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\attack\\dragonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,16 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 0,
-=======
-          "SelectedChildIndex": 2,
->>>>>>> parent of 8073b59 (updating from main)
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
               "Title": "Shopkeeper.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Shopkeeper.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Shopkeeper.cs",
@@ -49,39 +35,20 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T20:55:37.283Z",
-=======
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowIkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T03:54:53.017Z",
->>>>>>> parent of 8073b59 (updating from main)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 3,
->>>>>>> parent of 8073b59 (updating from main)
               "Title": "EnemyAttackSingleStraightProjectile.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
-<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
->>>>>>> parent of 8073b59 (updating from main)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:43:36.958Z",
               "EditorCaption": ""
-<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -94,8 +61,6 @@
               "ViewState": "AgIAACgAAAAAAAAAAAAswCsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:34:43.682Z"
-=======
->>>>>>> parent of 8073b59 (updating from main)
             }
           ]
         }

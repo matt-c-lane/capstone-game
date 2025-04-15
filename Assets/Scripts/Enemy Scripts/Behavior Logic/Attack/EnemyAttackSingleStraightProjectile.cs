@@ -49,12 +49,8 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
 
             if (_exitTimer > _timeTillExit)
             {
-<<<<<<< HEAD
                 enemy.StateMachine.ChangeState(enemy.
                     ChaseState);
-=======
-                enemy.StateMachine.ChangeState(enemy.ChaseState);
->>>>>>> parent of 8073b59 (updating from main)
             }
         }
         else
