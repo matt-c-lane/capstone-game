@@ -50,6 +50,8 @@ public class NewMonoBehaviourScript : EnemyAttackSOBase
             if (_exitTimer > _timeTillExit)
             {
                 enemy.StateMachine.ChangeState(enemy.ChaseState);
+                enemy.StateMachine.ChangeState(enemy.
+                    ChaseState);
             }
         }
         else
