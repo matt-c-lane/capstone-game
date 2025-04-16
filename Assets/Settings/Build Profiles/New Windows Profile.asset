@@ -23,6 +23,10 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Menus/MainMenu.unity
   - m_enabled: 1
+    m_path: Assets/Scenes/Menus/PlayerCreation.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Menus/PlayerSelect.unity
+  - m_enabled: 1
     m_path: Assets/Scenes/Dungeon Floor 1.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Dungeon Floor 2.unity
@@ -32,8 +36,6 @@ MonoBehaviour:
     m_path: Assets/Scenes/Dungeon Floor 4.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Dungeon Floor 5.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Menus/PlayerCreation.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Player and Enemy AI Test.unity
   m_ScriptingDefines: []

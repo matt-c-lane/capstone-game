@@ -490,7 +490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 727899823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739590714}
+        m_TargetAssemblyTypeName: ClassSelectionManager, Assembly-CSharp
+        m_MethodName: Warrior
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &727899823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +553,7 @@ GameObject:
   - component: {fileID: 739590712}
   - component: {fileID: 739590711}
   - component: {fileID: 739590710}
+  - component: {fileID: 739590714}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -634,6 +647,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &739590714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739590709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b40ea8fff6e9a4184086729bcb6136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: {fileID: 11400000, guid: 23a851b0f6a5b3b40855c388509d29ba, type: 2}
+  mage: {fileID: 11400000, guid: 3b862f8d136eab142a416581192cf899, type: 2}
+  thief: {fileID: 11400000, guid: ff2da7fcf21746e49856794f21d4a1d3, type: 2}
+  sword: {fileID: 5403203845410613805, guid: 94febb02ef4ee614abcd5c27293dc49b, type: 3}
+  bow: {fileID: -2088579146428175737, guid: beb39b7171a73bc438b76a0b469f01e7, type: 3}
+  spell: {fileID: -2088579146428175737, guid: 6abf676e8b8c76442adb648ee282408e, type: 3}
 --- !u!1 &766864701
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 766864704}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739590714}
+        m_TargetAssemblyTypeName: ClassSelectionManager, Assembly-CSharp
+        m_MethodName: Mage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &766864704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,6 +1434,7 @@ GameObject:
   - component: {fileID: 1533307842}
   - component: {fileID: 1533307841}
   - component: {fileID: 1533307840}
+  - component: {fileID: 1533307843}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1472,6 +1516,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1533307843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533307839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1688109935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,7 +1796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1907004510}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739590714}
+        m_TargetAssemblyTypeName: ClassSelectionManager, Assembly-CSharp
+        m_MethodName: Thief
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1907004510
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 public class ShopItem : ScriptableObject
 {
@@ -19,3 +20,4 @@ public class ShopItem : ScriptableObject
         return $"{itemName} (x{quantity}): {description}";
     }
 }
+*/

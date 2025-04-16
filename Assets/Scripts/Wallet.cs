@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using System.Collections;
 public class Wallet
@@ -19,3 +20,4 @@ public class Wallet
         return true;
         }
     }
+*/
