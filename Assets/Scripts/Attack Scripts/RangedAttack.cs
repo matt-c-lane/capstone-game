@@ -68,6 +68,10 @@ public class RangedAttack : Attack
                 stats: stats,
                 maxDistance: projectileRange
             );
+
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            float adjustment = GetFacingAdjustment(projectile.facing);
+            projectile.transform.rotation = Quaternion.Euler(0, 0, angle + adjustment);
         }
         else
         {
@@ -89,6 +93,18 @@ public class RangedAttack : Attack
 
         yield return new WaitForSeconds(0.2f);
         GameObject.Destroy(weaponObj);
+    }
+
+    private float GetFacingAdjustment(ProjectileFacing facing)
+    {
+        return facing switch
+        {
+            ProjectileFacing.Right => 0f,
+            ProjectileFacing.Up => 270f,
+            ProjectileFacing.Left => 180f,
+            ProjectileFacing.Down => 90f,
+            _ => 0f
+        };
     }
 
     public void DrawDebug(Vector2 origin, Vector2 direction)

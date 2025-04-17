@@ -71,7 +71,7 @@ public class PointBuyManager : MonoBehaviour
     {
         if (availablePoints == 0)
         {
-            SceneManager.LoadScene("Dungeon Floor 1");
+            SceneManager.LoadScene("PlayerSelect");
         }
     }
 }

@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 public class ShopItem : ScriptableObject
 {
@@ -13,10 +14,10 @@ public class ShopItem : ScriptableObject
         icon = icn;
         price = prc;
     }
-/*
+
     public override string ToString()
     {
         return $"{itemName} (x{quantity}): {description}";
     }
-*/
 }
+*/
