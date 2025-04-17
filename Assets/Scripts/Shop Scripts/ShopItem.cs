@@ -13,9 +13,10 @@ public class ShopItem : ScriptableObject
         icon = icn;
         price = prc;
     }
-
+/*
     public override string ToString()
     {
         return $"{itemName} (x{quantity}): {description}";
     }
+*/
 }

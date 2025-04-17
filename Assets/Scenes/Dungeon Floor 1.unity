@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 692752063}
   - component: {fileID: 692752065}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Dungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   chosenClass: {fileID: 11400000, guid: ec288b7382092844cbbc03a32ba02dd0, type: 2}
   moveSpeed: 5
   sprintMultiplier: 1.5
+  startingPosition: {fileID: 11400000, guid: 72bed6ca83fe39a4c90926f24fea9b0f, type: 2}
 --- !u!61 &708476899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -603,9 +604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
-  - {fileID: 3825740753697516563, guid: af24cd0278a9368488d0a7f83ff55d95, type: 3}
-  - {fileID: 2405966893322193017, guid: 226ff41335ef79e47944d497f32fc32f, type: 3}
   - {fileID: 5217047668501794180, guid: 26317b0a47e47af46bd9ea3f53a0b4a4, type: 3}
+  - {fileID: 3825740753697516563, guid: af24cd0278a9368488d0a7f83ff55d95, type: 3}
   spawnPoint: {fileID: 875529100}
 --- !u!4 &875529100
 Transform:
@@ -929,8 +929,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 529817579
-  m_SortingLayer: 0
+  m_SortingLayerID: 757385191
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1117,7 +1117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d22d2d0c35ff8408c7c1a063cac4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 1
+  sceneToLoad: 2
+  playerPosition: {x: 3.5, y: 4}
+  playerStorage: {fileID: 11400000, guid: 72bed6ca83fe39a4c90926f24fea9b0f, type: 2}
 --- !u!61 &1456562313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1255,17 +1257,17 @@ MonoBehaviour:
   topRooms:
   - {fileID: 3609742044856035411, guid: c54920ae1c7ec0b48b4b01fbd1a6e815, type: 3}
   - {fileID: 3362469143189583866, guid: 58ec29d0c21beca4db767fd03c7315d7, type: 3}
-  - {fileID: 3609742044856035411, guid: 2c0b508c4c6313246bdf9813ffc4fbec, type: 3}
+  - {fileID: 5217047668501794180, guid: 4b36f60ffa624824ea1b14a942e35a98, type: 3}
   leftRooms:
   - {fileID: 3714769324230125206, guid: e87ef6524d888984b8eb2d056a1acd7a, type: 3}
   - {fileID: 4611382466793895882, guid: 7110c835c88e0784e9a072bbf0227d51, type: 3}
   - {fileID: 4611382466793895882, guid: 7110c835c88e0784e9a072bbf0227d51, type: 3}
   - {fileID: 5217047668501794180, guid: 26317b0a47e47af46bd9ea3f53a0b4a4, type: 3}
+  - {fileID: 5217047668501794180, guid: 4b36f60ffa624824ea1b14a942e35a98, type: 3}
   rightRooms:
   - {fileID: 5217047668501794180, guid: 26317b0a47e47af46bd9ea3f53a0b4a4, type: 3}
   - {fileID: 2405966893322193017, guid: 226ff41335ef79e47944d497f32fc32f, type: 3}
-  - {fileID: 913921316795664852, guid: 60649cee99699c34a89eb4b3461d9d34, type: 3}
-  - {fileID: 5217047668501794180, guid: c60e2087a36647247bc330a82867f780, type: 3}
+  - {fileID: 3362469143189583866, guid: 4a6932ebcad6f5042af76939d782a004, type: 3}
   closedRooms: {fileID: 7678107456102729064, guid: c115a16a98b7e944e9e417d22ddb6f20, type: 3}
   rooms: []
   waitTime: 2
@@ -1318,9 +1320,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 708476902}
-  smoothing: 0.6
-  maxPosition: {x: 255, y: 255}
-  minPosition: {x: -255, y: -255}
+  smoothing: 0.2
+  maxPosition: {x: 1, y: 5}
+  minPosition: {x: -1, y: -5}
 --- !u!114 &1630626499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,6 +1548,10 @@ PrefabInstance:
     - target: {fileID: 3060383050876518372, guid: beb476b174a547c42a242e2b6fb181c6, type: 3}
       propertyPath: m_Name
       value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441803174552023401, guid: beb476b174a547c42a242e2b6fb181c6, type: 3}
+      propertyPath: m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9096460390106873723, guid: beb476b174a547c42a242e2b6fb181c6, type: 3}
       propertyPath: m_RenderMode

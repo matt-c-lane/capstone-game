@@ -3,7 +3,7 @@ using System.Collections;
 public class Wallet
 {
     public static int balance;
-
+/*
     public bool Updategold(int payment)
         // Updates total amount of gold in wallet. For subtracting gold, payment will be negative 
         balance+=payment;
@@ -18,4 +18,5 @@ public class Wallet
         {
         return true;
         }
-    }
+   */ 
+} 

@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     private bool isMoving;
     private Rigidbody2D rb;
     private Vector2 movementInput;
+    public VectorValue startingPosition;
 
     private Animator animator;
 
@@ -64,6 +65,9 @@ public class Player : MonoBehaviour
         statser = new PlayerStatsManager(this);
 
         uiManager.UpdateStats(statser.body, statser.mind, statser.luck);
+    
+        // === Set Player Position ===
+        transform.position = startingPosition.initialValue;
     }
 
     void OnApplicationQuit()
