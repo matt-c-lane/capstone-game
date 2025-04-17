@@ -32,7 +32,7 @@ public class MeleeAttack : Attack
         Player player = GameObject.FindAnyObjectByType<Player>();
         if (player != null && player.equippedWeapon is MeleeWeapon meleeWeapon)
         {
-            player.StartCoroutine(PlayAttackAnimation(player, meleeWeapon.weaponIcon, meleeWeapon.spriteSize, meleeWeapon.attackOffset));
+            player.StartCoroutine(PlayAttackAnimation(player, meleeWeapon.weaponIcon, meleeWeapon.spriteSize, meleeWeapon.attackOffset, direction));
         }
 
         if (DebugManager.Instance != null)
@@ -48,7 +48,7 @@ public class MeleeAttack : Attack
         Debug.DrawRay(origin, rightBoundary, Color.red, 0.5f);
     }
 
-    private IEnumerator PlayAttackAnimation(Player player, Sprite attackSprite, Vector2 spriteSize, float offsetDistance = 1f)
+    private IEnumerator PlayAttackAnimation(Player player, Sprite attackSprite, Vector2 spriteSize, float offsetDistance, Vector2 direction)
     {
         GameObject swordObj = new GameObject("Sword Attack");
         SpriteRenderer renderer = swordObj.AddComponent<SpriteRenderer>();
@@ -56,31 +56,27 @@ public class MeleeAttack : Attack
         renderer.sortingLayerID = SortingLayer.NameToID("Player");
         renderer.sortingOrder = 5;
 
-        // Set sprite size
         swordObj.transform.localScale = new Vector3(spriteSize.x, spriteSize.y, 1);
 
-        // Calculate initial position (offset from player in attack direction)
-        Vector2 mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition); 
-        Vector2 attackDir = (mousePosition - (Vector2)player.transform.position).normalized;
-        Vector2 startPosition = (Vector2)player.transform.position + (attackDir * offsetDistance);
+        Vector2 origin = player.transform.position;
 
-        // Place sword at initial position
-        swordObj.transform.position = startPosition;
+        float startAngle = -attackArcAngle / 2f;
+        float endAngle = attackArcAngle / 2f;
 
-        // Rotate the sword around the player in a 90-degree arc
+        float baseAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
         float elapsedTime = 0f;
         while (elapsedTime < animationDuration)
         {
-            float angle = Mathf.Lerp(-attackArcAngle / 2f, attackArcAngle / 2f, elapsedTime / animationDuration);
-            float radians = angle * Mathf.Deg2Rad;
+            float t = elapsedTime / animationDuration;
+            float angle = Mathf.Lerp(startAngle, endAngle, t);
+            float worldAngle = baseAngle + angle;
+            float radians = worldAngle * Mathf.Deg2Rad;
 
-            Vector2 rotatedPosition = (Vector2)player.transform.position + new Vector2(
-                Mathf.Cos(radians) * offsetDistance,
-                Mathf.Sin(radians) * offsetDistance
-            );
+            Vector2 pos = origin + new Vector2(Mathf.Cos(radians), Mathf.Sin(radians)) * offsetDistance;
+            swordObj.transform.position = pos;
 
-            swordObj.transform.position = rotatedPosition;
-            swordObj.transform.rotation = Quaternion.Euler(0, 0, angle);
+            swordObj.transform.rotation = Quaternion.Euler(0, 0, worldAngle);
 
             elapsedTime += Time.deltaTime;
             yield return null;

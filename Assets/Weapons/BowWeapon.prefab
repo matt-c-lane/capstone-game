@@ -46,7 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Bow
   weaponIcon: {fileID: 3668121467037184578, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
-  attack: {fileID: 11400000, guid: 9497997e5e6441f44b1002ad7d7bcdcc, type: 2}
-  projectileSprite: {fileID: -120800573, guid: 3812e7be1019554428ffb61925f8e20e, type: 3}
+  attack: {fileID: 11400000, guid: c296917b3bf52ab4f9b89b012e373377, type: 2}
+  effect: {fileID: 0}
+  cooldownTime: 0.5
+  projectileSprite: {fileID: -6483809905876059248, guid: bb60fef4ef4bc0741a01fff09199a8e6, type: 3}
   weaponSpriteSize: {x: 1, y: 1}
   projectileSpriteSize: {x: 1, y: 1}

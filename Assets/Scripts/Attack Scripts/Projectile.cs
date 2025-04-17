@@ -1,5 +1,11 @@
 using UnityEngine;
-
+public enum ProjectileFacing
+{
+    Up,
+    Down,
+    Left,
+    Right
+}
 public class Projectile : MonoBehaviour
 {
     private float lifetime = 10f;
@@ -12,6 +18,8 @@ public class Projectile : MonoBehaviour
 
     protected Vector2 _startPosition;
     protected float _timeAlive;
+
+    public ProjectileFacing facing = ProjectileFacing.Right;
 
     public void Initialize(int damage, DamageType damageType, float speed, Vector2 direction, float maxDistance = 0f)
     {
