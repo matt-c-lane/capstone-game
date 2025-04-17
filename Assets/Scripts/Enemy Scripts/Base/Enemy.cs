@@ -116,8 +116,12 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     {
         EnemyDamaged,
         PlayFootStepSound,
+<<<<<<< Updated upstream
         ScratchHit,  
         FireBreath   
+=======
+        ScratchHit,
+>>>>>>> Stashed changes
     }
     #endregion
     #region StateMachine Variables

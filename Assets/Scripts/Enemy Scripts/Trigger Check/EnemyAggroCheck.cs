@@ -18,7 +18,7 @@ public class EnemyAggroCheck : MonoBehaviour
         if (collision.gameObject == PlayerTarget)        
         {
             _enemy.SetAggroStatus(true);
-          ;
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

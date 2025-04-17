@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\capstone-game\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,6 +14,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\attack\\dragonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\attack\\dragonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\slimepathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\slimepathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\dragonpathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\dragonpathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +36,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "Shopkeeper.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Shopkeeper.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Shopkeeper.cs",
@@ -35,10 +45,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T20:55:37.283Z",
+=======
+              "Title": "SlimePathfinding.cs",
+              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
+              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T19:43:01.235Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "EnemyAttackSingleStraightProjectile.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
@@ -48,6 +69,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:43:36.958Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "DragonPathfinding.cs",
+              "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
+              "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T19:35:02.48Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {

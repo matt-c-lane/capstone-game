@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 481e9e660c7a040429f7cb8905dcac3e
+guid: cb75f538c4dd9164883043acdb3c642a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -93,30 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character blue_0
+      name: FireBreath_Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 16
-        height: 32
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abaa3820485a1e946bb974f4fbcc19bf
-      internalID: -2103692905
+      spriteID: a17bd22374c05034abc056fbf6adf60a
+      internalID: -1350561856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_1
+      name: FireBreath_Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 224
-        width: 16
-        height: 32
+        x: 100
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc1e9da74eb6aa4aa97b6ee7680052e
-      internalID: -1261273707
+      spriteID: 20e1e56abb964fa4086304b88df0f3a6
+      internalID: -81303791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_2
+      name: FireBreath_Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
-        width: 16
-        height: 32
+        x: 200
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59293bedbff0db1488440f2cd88d069f
-      internalID: -1382395665
+      spriteID: 02d43a9bbb4b4974c801dcc4d49c64d2
+      internalID: -1580832006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_3
+      name: FireBreath_Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 224
-        width: 16
-        height: 32
+        x: 300
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fee5a96e68c57d46ab71365d1b453de
-      internalID: 571333091
+      spriteID: 422d3970c81aec0498df73784c964334
+      internalID: -602812551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_4
+      name: FireBreath_Sheet_4
       rect:
         serializedVersion: 2
-        x: 80
-        y: 224
-        width: 16
-        height: 32
+        x: 400
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2f77d76a8e138e459faaa54a9fe5d60
-      internalID: 622033662
+      spriteID: 0742c753914ffa744b33032554dc0f83
+      internalID: -2083807000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_5
+      name: FireBreath_Sheet_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
-        width: 16
-        height: 32
+        x: 500
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f46b4abf92b5df419e41a1c5f8727cd
-      internalID: 1827056370
+      spriteID: d56279c6dc2a6ef4b8d43d8ea6cbed3f
+      internalID: -554672695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_6
+      name: FireBreath_Sheet_6
       rect:
         serializedVersion: 2
-        x: 112
-        y: 224
-        width: 16
-        height: 32
+        x: 600
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c0222dc3f5a06479a0931a4004e492
-      internalID: 26624758
+      spriteID: ffd69ae03c613ab4cbd62f23139146d7
+      internalID: -1890776595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_7
+      name: FireBreath_Sheet_7
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
-        width: 16
-        height: 32
+        x: 700
+        y: 700
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,130 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd630236430c0de4a9a7db277e792cda
-      internalID: -821133603
+      spriteID: fe3d8a20fa38af04fb70eaa6966455f6
+      internalID: 1265437486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_8
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d4779577f820dd43815536c464faaae
-      internalID: -1514109574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_9
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 224
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70e1edc4bfef9a44cac94fec1ddbd50a
-      internalID: 1072008269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f761e7a1cf07f12418b952c0915851cd
-      internalID: -1943733309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_11
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 224
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03693b9747acce4469d23e349bf766d6
-      internalID: 1459551107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_12
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9920bcca8d6530f48acfbf6c378ee52b
-      internalID: 549922926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_13
+      name: FireBreath_Sheet_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 16
-        height: 32
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1abe2762cdf5a741a81bd565e4b53a0
-      internalID: 1445549725
+      spriteID: 57cd6ce71d540da419e13a1eecd4e3e9
+      internalID: -208703053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_14
+      name: FireBreath_Sheet_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 192
-        width: 16
-        height: 32
+        x: 100
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90fcd401506f31d42b4ee9e6c751c8c6
-      internalID: 1644741350
+      spriteID: 7b0a64c3aaa1c624c871c205cb9e490f
+      internalID: 739559761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_15
+      name: FireBreath_Sheet_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 16
-        height: 32
+        x: 200
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34ef33ebdc81eb0408b10dea7e1b87a2
-      internalID: 72434141
+      spriteID: 46680712a838f2c40b00336a072e1455
+      internalID: 1474717518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_16
+      name: FireBreath_Sheet_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
-        width: 16
-        height: 32
+        x: 300
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27000335ccfe6784ea3749b05665d0d3
-      internalID: -608802811
+      spriteID: 3ed4aca79e6f7544c96001e7ebb73eae
+      internalID: 702737340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_17
+      name: FireBreath_Sheet_12
       rect:
         serializedVersion: 2
-        x: 80
-        y: 192
-        width: 16
-        height: 32
+        x: 400
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f831d435c126d43885984dee109184
-      internalID: -1234517037
+      spriteID: f04d0460541cc704c8b15753d06e2c41
+      internalID: 726371031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_18
+      name: FireBreath_Sheet_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 16
-        height: 32
+        x: 500
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,20 +398,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69325be9e761a0640a3a2aa3b252a51f
-      internalID: 1519228395
+      spriteID: 237c74bfb7b16e84c9dc0ae841f75bf4
+      internalID: -2028060871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_19
+      name: FireBreath_Sheet_14
       rect:
         serializedVersion: 2
-        x: 112
-        y: 192
-        width: 16
-        height: 32
+        x: 600
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,20 +420,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb9a840217826a49be2c8715f3b92f2
-      internalID: -318197141
+      spriteID: e224b4ec1c0e2644faffde6ffa27f963
+      internalID: -2036988389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_20
+      name: FireBreath_Sheet_15
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
-        width: 16
-        height: 32
+        x: 700
+        y: 600
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,86 +442,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bfda687747aced44a1e39e1b73906aa
-      internalID: -2062501921
+      spriteID: ab463c535dbd7b24893a29387ebd38cd
+      internalID: 2018065504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_21
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec32a4498833eba44aa4411448ae2296
-      internalID: -856032034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_22
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 192
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4af69f140b368749bc6410427b308f8
-      internalID: -649037377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_23
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 745551ace7ae9584abe49413b0fe751f
-      internalID: -1454891052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_24
+      name: FireBreath_Sheet_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 16
-        height: 32
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,20 +464,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3eaaf967d82bec45976865326dfb178
-      internalID: 1311496042
+      spriteID: 50b163f9eb9fbfd4f82b92b0b5118cf5
+      internalID: -377065449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_25
+      name: FireBreath_Sheet_17
       rect:
         serializedVersion: 2
-        x: 16
-        y: 160
-        width: 16
-        height: 32
+        x: 100
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,20 +486,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e080389fa3c59c4fb9b2e697734d1e6
-      internalID: -963376317
+      spriteID: f4cf6b87ff245b54696c1fc274119f4c
+      internalID: 227593557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_26
+      name: FireBreath_Sheet_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 16
-        height: 32
+        x: 200
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,20 +508,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59a21681ca04e324990d74758fe209a1
-      internalID: -1246828936
+      spriteID: dde614601cba93b40a190715e7f7299f
+      internalID: -919867866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_27
+      name: FireBreath_Sheet_19
       rect:
         serializedVersion: 2
-        x: 48
-        y: 160
-        width: 16
-        height: 32
+        x: 300
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,20 +530,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5087fe796f9754da8141417201d9e1
-      internalID: -1665284415
+      spriteID: 0430ac8f42f888547a151093bef4c61d
+      internalID: -569904772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_28
+      name: FireBreath_Sheet_20
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
-        width: 16
-        height: 32
+        x: 400
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb502eb03b35add498a837a1a5bde652
-      internalID: 1532107944
+      spriteID: 48ee35308290de94dabd6a837f126480
+      internalID: -1702084038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_29
+      name: FireBreath_Sheet_21
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
-        width: 16
-        height: 32
+        x: 500
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,20 +574,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23d39b11f1da35c4e8277662915efdc4
-      internalID: -721711222
+      spriteID: bfb478a4953f1ce4f85cbbc9e6dff5e4
+      internalID: -102967101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_30
+      name: FireBreath_Sheet_22
       rect:
         serializedVersion: 2
-        x: 112
-        y: 160
-        width: 16
-        height: 32
+        x: 600
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,20 +596,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b169c6059288a429c6d1fac24c1461
-      internalID: 2109172347
+      spriteID: 9c5787d03e2731649b012cb8f023eec6
+      internalID: 778695476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_31
+      name: FireBreath_Sheet_23
       rect:
         serializedVersion: 2
-        x: 144
-        y: 160
-        width: 16
-        height: 32
+        x: 700
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,86 +618,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e8d963e0d68144c8beeefb15c7f25b
-      internalID: -1142695783
+      spriteID: 56c64730351071e4086d6b14783f1fac
+      internalID: -946280251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_32
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8ccda57ee8f8d74991d9e790699c157
-      internalID: 1891433072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_33
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 160
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c844248508975b14f8b967b62140c6cd
-      internalID: -910013547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_34
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08142566c1424ac438d6a66900ccaacd
-      internalID: -1269103325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_35
+      name: FireBreath_Sheet_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 16
-        height: 32
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -895,20 +640,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbc10d01221391645a0955dc93fe07c8
-      internalID: -391112107
+      spriteID: 0d462e35540862241ac7f4b52276b6a6
+      internalID: 1369890578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_36
+      name: FireBreath_Sheet_25
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
-        width: 16
-        height: 32
+        x: 100
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -917,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adff2bbcb0128e84ca2d2f339b0cc9e6
-      internalID: -2024920468
+      spriteID: 1f758c73d3d33394985d0bf653a9cea5
+      internalID: -1376733760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_37
+      name: FireBreath_Sheet_26
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 16
-        height: 32
+        x: 200
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -939,20 +684,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681d97fc67b89a244971b913b259234e
-      internalID: -1925993865
+      spriteID: fb835d76fd2c36a41b5864cfa4fe48e1
+      internalID: 1064287779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_38
+      name: FireBreath_Sheet_27
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
-        width: 16
-        height: 32
+        x: 300
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,20 +706,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d8beec8533831d48935fe65a6ecc49f
-      internalID: -1526384027
+      spriteID: a1c4b341c8968f84c857eae320ef749d
+      internalID: 398377792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_39
+      name: FireBreath_Sheet_28
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
-        width: 16
-        height: 32
+        x: 400
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -983,20 +728,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5bb163a364f4146b8a12619cd787ae
-      internalID: 297462200
+      spriteID: 620d157ea7241b34ea3bac901069c7ba
+      internalID: -352964317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_40
+      name: FireBreath_Sheet_29
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 16
-        height: 32
+        x: 500
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1005,20 +750,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 343fcaaf71c8a034dab7daca08ffa2d5
-      internalID: 444812281
+      spriteID: aca87a05b0b6cf8438d3ba989963ccb7
+      internalID: 604344487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_41
+      name: FireBreath_Sheet_30
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
-        width: 16
-        height: 32
+        x: 600
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,20 +772,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea7d1e6ca8f5e8b45b123e01879ddc16
-      internalID: 1521153981
+      spriteID: cd1a927797763b04ebb735dbf2c54cf0
+      internalID: 999990028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_42
+      name: FireBreath_Sheet_31
       rect:
         serializedVersion: 2
-        x: 144
-        y: 128
-        width: 16
-        height: 32
+        x: 700
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1049,86 +794,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfb64902ae5b53d4cb5ad4afec26f06e
-      internalID: 1482057313
+      spriteID: 6d551f82ad8280742a6df08f1cc01767
+      internalID: -1144309665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_43
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 844bea8d27219524fab53ceacb2d7490
-      internalID: -1592095835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_44
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 128
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eebb31bd1d6c12b46ab757ab4d326da1
-      internalID: -1847103411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_45
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f12fabc931929b64bb53487832aaa031
-      internalID: -389803556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_46
+      name: FireBreath_Sheet_32
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 16
-        height: 32
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,20 +816,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f71f19364c775d94db2b5c291f5dbcd6
-      internalID: -1912193137
+      spriteID: 5f103d47b5b198946975acb69f04effd
+      internalID: 114074973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_47
+      name: FireBreath_Sheet_33
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 32
+        x: 100
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1159,20 +838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff2735ef08001c84ead2207738820b08
-      internalID: 711911206
+      spriteID: 7afafa773fb46d040bafb997f80a2be9
+      internalID: 1513530999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_48
+      name: FireBreath_Sheet_34
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 32
+        x: 200
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1181,20 +860,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a671a2d97bb464e98fb11d4361b9b8
-      internalID: 513420453
+      spriteID: 15cc3a08ad68dd1498ec0501104b9d2d
+      internalID: 1632932203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_49
+      name: FireBreath_Sheet_35
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 32
+        x: 300
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,20 +882,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4545d6356aac7a842a9187a1b4a50e77
-      internalID: -1018425421
+      spriteID: 67c3ea5415e092549ad8c1cf0d4a7050
+      internalID: -1789181038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_50
+      name: FireBreath_Sheet_36
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 16
-        height: 32
+        x: 400
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1225,20 +904,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a80e868accf6b644c81d22b733e89fc0
-      internalID: -883090815
+      spriteID: 6cd86c25b878f564c9c18ee2285be481
+      internalID: -1158633925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_51
+      name: FireBreath_Sheet_37
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 32
+        x: 500
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,20 +926,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625408ec81d17904b99e138d59a47fb2
-      internalID: -933709900
+      spriteID: e12713da724a8cf4a8ec67e02fd68832
+      internalID: 968640137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_52
+      name: FireBreath_Sheet_38
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 32
+        x: 600
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1269,20 +948,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2590ab96bfb6c114aa4307c882b965a8
-      internalID: -235587101
+      spriteID: 86cf593b02d795c4f9dca4260330c53f
+      internalID: 373086811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_53
+      name: FireBreath_Sheet_39
       rect:
         serializedVersion: 2
-        x: 112
-        y: 96
-        width: 16
-        height: 32
+        x: 700
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1291,196 +970,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a441366824f56a245b2c0139900f2bee
-      internalID: 676292408
+      spriteID: 3b2004a6474bea54c8a745b1507d644f
+      internalID: -154431606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_54
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 440c41bf70ccf2141b2d54add3bd0f83
-      internalID: 2051222163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_55
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca0317d88f4fda04b937d7445ce513d3
-      internalID: 530460774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_56
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 030c59730eecb8a46baf116b39342b8d
-      internalID: 26196541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_57
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba3ee63ca597bb9469ce200198233cb8
-      internalID: -2000968014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_58
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a29e177fc957d1a499528003e05da265
-      internalID: 1736318141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_59
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f6b6c64666ab7341af95eccbfc22fee
-      internalID: -1172252994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_60
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 817dcf19d10c2f0468fc4dc6d098eaae
-      internalID: -450183882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_61
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45e84905ad0368e458df82fca9499d92
-      internalID: -107020355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_62
+      name: FireBreath_Sheet_40
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 32
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1489,20 +992,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f2871a8187da7418a4836e5cf98d9e
-      internalID: 1834306222
+      spriteID: ddb1a93c585b419409693bcbe39a2493
+      internalID: 1606412754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_63
+      name: FireBreath_Sheet_41
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
+        x: 100
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1511,20 +1014,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09e0a514798abcd4e95c8c0de0228fb9
-      internalID: 1654279631
+      spriteID: a424366f24d57b6428481fd7f86966f5
+      internalID: 1387325589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_64
+      name: FireBreath_Sheet_42
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 32
+        x: 200
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1533,20 +1036,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7bb5b31bf895bf4597ee382377ec0fd
-      internalID: 1452026293
+      spriteID: 38f620c0dc5313c41873031cc05ce03a
+      internalID: -646022517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_65
+      name: FireBreath_Sheet_43
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 32
+        x: 300
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1555,20 +1058,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eaa3d7faa54f84469e0e58583d47f7e
-      internalID: -1766965816
+      spriteID: 672328a7e4041b74ba286e97024c3c27
+      internalID: 226571071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_66
+      name: FireBreath_Sheet_44
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 32
+        x: 400
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1577,20 +1080,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5581f2cec649d8d4eb91c345eda283fb
-      internalID: -1428261595
+      spriteID: e720ca8ccca80b041908d487af061944
+      internalID: 1402829293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_67
+      name: FireBreath_Sheet_45
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 32
+        x: 500
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1599,20 +1102,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63d1a5242721267449d393c35c60e341
-      internalID: -353505299
+      spriteID: da416e90b80778e4c9874c367f8d50d2
+      internalID: 670206073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_68
+      name: FireBreath_Sheet_46
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 16
-        height: 32
+        x: 600
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1621,20 +1124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c75158bef5c69c647a0df6bd5326b981
-      internalID: -830336347
+      spriteID: f0efc987d99d28146ae24fa81d6f897e
+      internalID: 946635697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_69
+      name: FireBreath_Sheet_47
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 32
+        x: 700
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1643,20 +1146,196 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c3a1f1edf91db4c8a800af458add28
-      internalID: 282668957
+      spriteID: 3dc201d4318d9fa4bbaccf51c4186abf
+      internalID: 650451311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_70
+      name: FireBreath_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88be6edc76052fc45b1be69f11adedaa
+      internalID: 780181487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5cc226bf06ef44ba7bf95463efed82
+      internalID: -1150571824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec15873350f079843b5769a0eb9a0caa
+      internalID: 2056119338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0305a4f0ccfb9348b91e206a16282c1
+      internalID: 823905939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770421e595c2f8144a23c7263cd695f0
+      internalID: -1131742859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64401abf3b74cef4298d1722d0c8a4a5
+      internalID: -1782164990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8340e62de5d2214d8d52c74609d7547
+      internalID: -1941860723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7767ae22f0a3ca4478ff2685c593d528
+      internalID: -617168053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireBreath_Sheet_56
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 32
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1665,20 +1344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90ec86089edd7d44d8b6bba1a73b38bc
-      internalID: -759063145
+      spriteID: ae04be476a74fec4cb19cddc877e467a
+      internalID: 2045860432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_71
+      name: FireBreath_Sheet_57
       rect:
         serializedVersion: 2
-        x: 16
+        x: 100
         y: 0
-        width: 16
-        height: 32
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1687,20 +1366,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3755fc469416a44b92bb9713fc7f0d8
-      internalID: 936924737
+      spriteID: f6a307ab8df547b47a5baff029ce245f
+      internalID: -659928534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_72
+      name: FireBreath_Sheet_58
       rect:
         serializedVersion: 2
-        x: 32
+        x: 200
         y: 0
-        width: 16
-        height: 32
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1709,20 +1388,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 468488a9434a5464ab9a99b2a25ce506
-      internalID: -631149448
+      spriteID: bde55dc5b06da8944bc43ff1e189c58c
+      internalID: 1301153390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_73
+      name: FireBreath_Sheet_59
       rect:
         serializedVersion: 2
-        x: 48
+        x: 300
         y: 0
-        width: 16
-        height: 32
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1731,20 +1410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fd6396c62d49c14e8a8d80420daba93
-      internalID: 1905441362
+      spriteID: 7afcace5df062374dab0b554267ddc42
+      internalID: 1573247589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character blue_74
+      name: FireBreath_Sheet_60
       rect:
         serializedVersion: 2
-        x: 64
+        x: 400
         y: 0
-        width: 16
-        height: 32
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1753,74 +1432,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b05fcdc626f39354596632fc1a47d3e1
-      internalID: -1988710067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_75
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f38150dede808f5438d8d4537836df04
-      internalID: -1283518074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_76
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c29266d5a9365614e836cbca6c4ea345
-      internalID: 2037501862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character blue_77
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfe789e3844c7a4478d39569ff5ea112
-      internalID: 1745306088
+      spriteID: 4eefc81db02ae75488479e5264154353
+      internalID: 1403904409
       vertices: []
       indices: 
       edges: []
@@ -1829,7 +1442,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e320c358de1694145970ed36ff861af0
+    spriteID: 80282c950378e29408dd1d1ac643352f
     internalID: 0
     vertices: []
     indices: 
@@ -1839,84 +1452,67 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      character blue_0: -2103692905
-      character blue_1: -1261273707
-      character blue_10: -1943733309
-      character blue_11: 1459551107
-      character blue_12: 549922926
-      character blue_13: 1445549725
-      character blue_14: 1644741350
-      character blue_15: 72434141
-      character blue_16: -608802811
-      character blue_17: -1234517037
-      character blue_18: 1519228395
-      character blue_19: -318197141
-      character blue_2: -1382395665
-      character blue_20: -2062501921
-      character blue_21: -856032034
-      character blue_22: -649037377
-      character blue_23: -1454891052
-      character blue_24: 1311496042
-      character blue_25: -963376317
-      character blue_26: -1246828936
-      character blue_27: -1665284415
-      character blue_28: 1532107944
-      character blue_29: -721711222
-      character blue_3: 571333091
-      character blue_30: 2109172347
-      character blue_31: -1142695783
-      character blue_32: 1891433072
-      character blue_33: -910013547
-      character blue_34: -1269103325
-      character blue_35: -391112107
-      character blue_36: -2024920468
-      character blue_37: -1925993865
-      character blue_38: -1526384027
-      character blue_39: 297462200
-      character blue_4: 622033662
-      character blue_40: 444812281
-      character blue_41: 1521153981
-      character blue_42: 1482057313
-      character blue_43: -1592095835
-      character blue_44: -1847103411
-      character blue_45: -389803556
-      character blue_46: -1912193137
-      character blue_47: 711911206
-      character blue_48: 513420453
-      character blue_49: -1018425421
-      character blue_5: 1827056370
-      character blue_50: -883090815
-      character blue_51: -933709900
-      character blue_52: -235587101
-      character blue_53: 676292408
-      character blue_54: 2051222163
-      character blue_55: 530460774
-      character blue_56: 26196541
-      character blue_57: -2000968014
-      character blue_58: 1736318141
-      character blue_59: -1172252994
-      character blue_6: 26624758
-      character blue_60: -450183882
-      character blue_61: -107020355
-      character blue_62: 1834306222
-      character blue_63: 1654279631
-      character blue_64: 1452026293
-      character blue_65: -1766965816
-      character blue_66: -1428261595
-      character blue_67: -353505299
-      character blue_68: -830336347
-      character blue_69: 282668957
-      character blue_7: -821133603
-      character blue_70: -759063145
-      character blue_71: 936924737
-      character blue_72: -631149448
-      character blue_73: 1905441362
-      character blue_74: -1988710067
-      character blue_75: -1283518074
-      character blue_76: 2037501862
-      character blue_77: 1745306088
-      character blue_8: -1514109574
-      character blue_9: 1072008269
+      FireBreath_Sheet_0: -1350561856
+      FireBreath_Sheet_1: -81303791
+      FireBreath_Sheet_10: 1474717518
+      FireBreath_Sheet_11: 702737340
+      FireBreath_Sheet_12: 726371031
+      FireBreath_Sheet_13: -2028060871
+      FireBreath_Sheet_14: -2036988389
+      FireBreath_Sheet_15: 2018065504
+      FireBreath_Sheet_16: -377065449
+      FireBreath_Sheet_17: 227593557
+      FireBreath_Sheet_18: -919867866
+      FireBreath_Sheet_19: -569904772
+      FireBreath_Sheet_2: -1580832006
+      FireBreath_Sheet_20: -1702084038
+      FireBreath_Sheet_21: -102967101
+      FireBreath_Sheet_22: 778695476
+      FireBreath_Sheet_23: -946280251
+      FireBreath_Sheet_24: 1369890578
+      FireBreath_Sheet_25: -1376733760
+      FireBreath_Sheet_26: 1064287779
+      FireBreath_Sheet_27: 398377792
+      FireBreath_Sheet_28: -352964317
+      FireBreath_Sheet_29: 604344487
+      FireBreath_Sheet_3: -602812551
+      FireBreath_Sheet_30: 999990028
+      FireBreath_Sheet_31: -1144309665
+      FireBreath_Sheet_32: 114074973
+      FireBreath_Sheet_33: 1513530999
+      FireBreath_Sheet_34: 1632932203
+      FireBreath_Sheet_35: -1789181038
+      FireBreath_Sheet_36: -1158633925
+      FireBreath_Sheet_37: 968640137
+      FireBreath_Sheet_38: 373086811
+      FireBreath_Sheet_39: -154431606
+      FireBreath_Sheet_4: -2083807000
+      FireBreath_Sheet_40: 1606412754
+      FireBreath_Sheet_41: 1387325589
+      FireBreath_Sheet_42: -646022517
+      FireBreath_Sheet_43: 226571071
+      FireBreath_Sheet_44: 1402829293
+      FireBreath_Sheet_45: 670206073
+      FireBreath_Sheet_46: 946635697
+      FireBreath_Sheet_47: 650451311
+      FireBreath_Sheet_48: 780181487
+      FireBreath_Sheet_49: -1150571824
+      FireBreath_Sheet_5: -554672695
+      FireBreath_Sheet_50: 2056119338
+      FireBreath_Sheet_51: 823905939
+      FireBreath_Sheet_52: -1131742859
+      FireBreath_Sheet_53: -1782164990
+      FireBreath_Sheet_54: -1941860723
+      FireBreath_Sheet_55: -617168053
+      FireBreath_Sheet_56: 2045860432
+      FireBreath_Sheet_57: -659928534
+      FireBreath_Sheet_58: 1301153390
+      FireBreath_Sheet_59: 1573247589
+      FireBreath_Sheet_6: -1890776595
+      FireBreath_Sheet_60: 1403904409
+      FireBreath_Sheet_7: 1265437486
+      FireBreath_Sheet_8: -208703053
+      FireBreath_Sheet_9: 739559761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
