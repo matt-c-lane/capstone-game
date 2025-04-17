@@ -59,8 +59,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
 <<<<<<< Updated upstream
+              "DocumentIndex": 2,
               "Title": "EnemyAttackSingleStraightProjectile.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\EnemyAttackSingleStraightProjectile.cs",
@@ -70,6 +70,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:43:36.958Z",
 =======
+              "DocumentIndex": 1,
               "Title": "DragonPathfinding.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\DragonPathfinding.cs",
