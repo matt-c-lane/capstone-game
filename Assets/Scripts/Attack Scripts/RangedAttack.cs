@@ -50,7 +50,7 @@ public class RangedAttack : Attack
             Enemy enemy = target.collider.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.Damage(damage, damageType, stats);
+                //enemy.Damage(damage, damageType, stats);
             }
         }
     }

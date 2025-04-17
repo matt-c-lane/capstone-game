@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
 {
 
@@ -14,10 +15,6 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsAggroed { get; set; }
     public bool IsWithinStrickingDistance { get; set; }
 
-    public int armor = 1; //Physical attacks, should never be zero
-    public int shield = 1; //Magic attacks, should never be zero
-
-    public int exp = 1; //Amount of experience the player gets
 
     public void Awake()
     {
@@ -51,23 +48,18 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
         StateMachine.CurrentState.PhysicsUpdate();
     }
     #region Health/Damage Functions
-    public void Damage(int damage, DamageType damageType, int[] stats)
+    public void Damage(float damageAmount)
     {
-        float damageFactor = 1f; //Value attack damage is multiplied by
-        float damageCalc; //Final attack damage before rounding
+        CurrentHealth -= damageAmount;
 
-        if (damageType == DamageType.Physical)
+        if (CurrentHealth <= 0f)
         {
-            damageFactor = (damage + stats[0])/armor;
+            Die();
         }
-        else if (damageType == DamageType.Magical)
-        {
-            damageFactor = (damage + stats[1])/shield;
-        }
+    }
 
-        damageCalc = (damageFactor*damage);
-        damage = (int)System.Math.Floor(damageCalc < 1 ? 1 : damageCalc); //All attacks deal at least 1 damage
-
+    public void TakeDamage(int damage)
+    {
         CurrentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage!");
 
@@ -76,17 +68,11 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
             Die();
         }
     }
+
     private void Die()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
-        GiveExp();
         Destroy(gameObject);
-    }
-    private void GiveExp()
-    {
-        Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.leveler.GainExp(exp);
-        Debug.Log($"Player gained {exp} EXP!");
     }
     #endregion
     #region Movement Functions
@@ -130,6 +116,8 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     {
         EnemyDamaged,
         PlayFootStepSound,
+        ScratchHit,  
+        FireBreath
     }
     #endregion
     #region StateMachine Variables

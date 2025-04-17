@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream
+guid: ed6761a3d93144f4a867ede5951cb8cb
+=======
+guid: ed6761a3d93144f4a867ede5951cb8cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EnemyIdleBase: {fileID: 11400000, guid: e90e15d1f8795e94dbd10227297bdca8, type: 2}
+  - EnemyChaseBase: {fileID: 11400000, guid: 0c0f103845c7a4a47b7da801b9ae6104, type: 2}
+  - EnemyAttackBase: {fileID: 11400000, guid: 914d26c053fb90147ad3af4713c4ebb6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> Stashed changes
