@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: fc2ab01474b3c574faeb61b00f97009f
-=======
-guid: 7130a0094bb68a44c8670f21579b6567
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
     enableMipMap: 0
-=======
-    enableMipMap: 1
->>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -42,7 +34,6 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< Updated upstream
     filterMode: 0
     aniso: 1
     mipBias: 0
@@ -53,23 +44,10 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-=======
-    filterMode: 1
-    aniso: 1
-    mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
   spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -77,15 +55,6 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-=======
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
->>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,11 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< Updated upstream
     textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> Stashed changes
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,7 +95,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< Updated upstream
     sprites:
     - serializedVersion: 2
       name: Dragon_Fire_Back
@@ -572,18 +536,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-=======
-    sprites: []
->>>>>>> Stashed changes
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
     spriteID: 8e7402bb94ad0524a9ae6b121e014064
-=======
-    spriteID: 
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
@@ -592,7 +549,6 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
     nameFileIdTable:
       Dragon_Claw_Back: 1302393006
       Dragon_Claw_Front: 1882448689
@@ -614,9 +570,6 @@ TextureImporter:
       Dragon_fire_Left: -1080741217
       Dragon_fire_front: -2001534688
       Dragon_fire_right: -2036206476
-=======
-    nameFileIdTable: {}
->>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

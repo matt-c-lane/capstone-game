@@ -155,11 +155,7 @@ public class DragonAttack : EnemyAttackSOBase
                 if (damageable != null)
                 {
                     int[] stats = { 0, 0 }; // Default stats for physical attack
-<<<<<<< Updated upstream
                     //damageable.Damage(scratchDamage, DamageType.Physical, stats);
-=======
-                    damageable.Damage(scratchDamage, DamageType.Physical, stats);
->>>>>>> Stashed changes
                 }
             }
         }

@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: DragonAttack
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   fireBreathPrefab: {fileID: 1620175557306283170, guid: 2f391e7dd0aa7e443be88551fc10d93b, type: 3}
-=======
-  fireBreathPrefab: {fileID: 4722707262151757509, guid: a88e43d8ac08fc0449a8f731efaf7f9e, type: 3}
->>>>>>> Stashed changes
 =======
   fireBreathPrefab: {fileID: 4722707262151757509, guid: a88e43d8ac08fc0449a8f731efaf7f9e, type: 3}
 >>>>>>> Stashed changes
