@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_GenerateLinks: 0
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
-  m_AffectedAgents: ffffffff
+  m_AffectedAgents: 
 --- !u!114 &901482371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12313,7 +12313,7 @@ MonoBehaviour:
   m_GenerateLinks: 0
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 0
-  m_AffectedAgents: ffffffff
+  m_AffectedAgents: 
 --- !u!114 &1498194982
 MonoBehaviour:
   m_ObjectHideFlags: 0
