@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 275248211
   m_SortingLayer: 5
   m_SortingOrder: 1
-  m_Sprite: {fileID: -80377859, guid: 4ed31ced84369c446a5a4376ea73572a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &181549775
@@ -233,7 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d22d2d0c35ff8408c7c1a063cac4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 5
+  sceneToLoad: 0
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 0}
 --- !u!61 &181549776
 BoxCollider2D:
   m_ObjectHideFlags: 0
