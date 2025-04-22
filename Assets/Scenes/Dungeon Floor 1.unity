@@ -584,9 +584,9 @@ GameObject:
   m_Component:
   - component: {fileID: 875529100}
   - component: {fileID: 875529099}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Player Room Spawn
-  m_TagString: SpawnPoint
+  m_TagString: PlayerSpawnRoom
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,6 +606,7 @@ MonoBehaviour:
   roomPrefabs:
   - {fileID: 5217047668501794180, guid: 26317b0a47e47af46bd9ea3f53a0b4a4, type: 3}
   - {fileID: 3825740753697516563, guid: af24cd0278a9368488d0a7f83ff55d95, type: 3}
+  - {fileID: 3609742044856035411, guid: c54920ae1c7ec0b48b4b01fbd1a6e815, type: 3}
   spawnPoint: {fileID: 875529100}
 --- !u!4 &875529100
 Transform:
@@ -637,7 +638,7 @@ GameObject:
   - component: {fileID: 1141605835}
   m_Layer: 0
   m_Name: Destroyer
-  m_TagString: SpawnPoint
+  m_TagString: PlayerSpawnRoom
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1091,9 +1092,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 275248211
-  m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingLayerID: -1441006771
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: -80377859, guid: 4ed31ced84369c446a5a4376ea73572a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1117,7 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d22d2d0c35ff8408c7c1a063cac4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 2
+  sceneToLoad: 1
   playerPosition: {x: 3.5, y: 4}
   playerStorage: {fileID: 11400000, guid: 72bed6ca83fe39a4c90926f24fea9b0f, type: 2}
 --- !u!61 &1456562313
@@ -1272,6 +1273,7 @@ MonoBehaviour:
   rooms: []
   waitTime: 2
   Stairs: {fileID: 1456562310}
+  stairsSpawnRadius: 5
 --- !u!4 &1522599742
 Transform:
   m_ObjectHideFlags: 0
@@ -1321,8 +1323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 708476902}
   smoothing: 0.2
-  maxPosition: {x: 1, y: 5}
-  minPosition: {x: -1, y: -5}
+  maxPosition: {x: 0.5, y: 5}
+  minPosition: {x: -0.5, y: -5}
 --- !u!114 &1630626499
 MonoBehaviour:
   m_ObjectHideFlags: 0

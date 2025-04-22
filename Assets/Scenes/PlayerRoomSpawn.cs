@@ -17,7 +17,11 @@ public class PlayerRoomSpawn : MonoBehaviour
         if (roomPrefabs.Length > 0)  // Ensure array is not empty
         {
             int randIndex = Random.Range(0, roomPrefabs.Length);  // Pick a random room
-            Instantiate(roomPrefabs[randIndex], spawnPoint.position, Quaternion.identity);
+            GameObject spawnedRoom = Instantiate(roomPrefabs[randIndex], spawnPoint.position, Quaternion.identity);
+
+            // Assign the PlayerSpawnRoom tag to the spawned room
+            spawnedRoom.tag = "PlayerSpawnRoom";
+            Debug.Log("Randomly spawned room tagged as PlayerSpawnRoom.");
         }
         else
         {
