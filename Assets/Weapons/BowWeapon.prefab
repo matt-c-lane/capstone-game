@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: Bow
-  weaponIcon: {fileID: 3668121467037184578, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
+  weaponIcon: {fileID: 3224635944093432508, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
   attack: {fileID: 11400000, guid: c296917b3bf52ab4f9b89b012e373377, type: 2}
   effect: {fileID: 0}
   cooldownTime: 0.5

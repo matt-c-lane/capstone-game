@@ -16,39 +16,62 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsWithinStrickingDistance { get; set; }
 
 
+<<<<<<< Updated upstream
     public void Awake()
+=======
+    void Awake()
+>>>>>>> Stashed changes
     {
-        EnemyIdleBaseInstance = Instantiate(EnemyIdleBase);
-        EnemyChaseBaseInstance = Instantiate(EnemyChaseBase);
-        EnemyAttackBaseInstance = Instantiate(EnemyAttackBase);
-
+        // Initialize State Machine FIRST
         StateMachine = new EnemyStateMachine();
 
+        // Then create states
         IdleState = new EnemyIdleState(this, StateMachine);
         ChaseState = new EnemyChaseState(this, StateMachine);
         AttackState = new EnemyAttackScript(this, StateMachine);
-    }
-    public void Start()
-    {
 
+        // Instantiate SO after states exist
+        EnemyIdleBaseInstance = Instantiate(EnemyIdleBase);
+        EnemyChaseBaseInstance = Instantiate(EnemyChaseBase);
+        EnemyAttackBaseInstance = Instantiate(EnemyAttackBase);
+    }
+
+    void Start()
+    {
         CurrentHealth = MaxHealth;
         RB = GetComponent<Rigidbody2D>();
 
+        // Initialize AFTER components exist
         EnemyIdleBaseInstance.Initialize(gameObject, this);
         EnemyChaseBaseInstance.Initialize(gameObject, this);
         EnemyAttackBaseInstance.Initialize(gameObject, this);
+
+        // Set initial state LAST
         StateMachine.Initialize(IdleState);
     }
+
     private void Update()
     {
-        StateMachine.CurrentState.frameUpdate();
+        if (StateMachine?.CurrentState != null) // Null check
+        {
+            StateMachine.CurrentState.frameUpdate();
+        }
     }
+
     private void FixedUpdate()
     {
-        StateMachine.CurrentState.PhysicsUpdate();
+        if (StateMachine?.CurrentState != null) // Null check
+        {
+            StateMachine.CurrentState.PhysicsUpdate();
+        }
     }
+
     #region Health/Damage Functions
+<<<<<<< Updated upstream
     public void Damage(float damageAmount)
+=======
+    public void Damage(float damageAmount, DamageType physical, int[] stats)
+>>>>>>> Stashed changes
     {
         CurrentHealth -= damageAmount;
 
