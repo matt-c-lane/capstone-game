@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\capstone-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\player scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|d:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\slimepathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\slimepathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\behavior logic\\pathfinding\\slimepathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\Assets\\Scripts\\Player Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\assets\\scripts\\enemy scripts\\base\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy scripts\\base\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB77D78C-CD92-057E-4B85-CCFEB3325BFC}|Assembly-CSharp.csproj|D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\Attack\\DragonAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,19 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Player Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\Player.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Player Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\Player.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAhwEUAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAASwEUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T07:50:43.842Z"
+              "WhenOpened": "2025-04-22T07:50:43.842Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -54,16 +55,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Base\\Enemy.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAA9wCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAA7wCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T07:24:02.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T07:24:02.274Z"
             },
             {
               "$type": "Document",
@@ -73,10 +73,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
               "ToolTip": "D:\\capstone-game\\Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy Scripts\\Behavior Logic\\PathFinding\\SlimePathfinding.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAIBJwC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:59:18.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T06:59:18.7Z"
             }
           ]
         }

@@ -128,47 +128,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934180}
-  - component: {fileID: 1934179}
   - component: {fileID: 1934181}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1934179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 57e9991c5a3b6314b94b48c0b43bd84b, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!4 &1934180
 Transform:
   m_ObjectHideFlags: 0
@@ -505,13 +472,12 @@ GameObject:
   - component: {fileID: 901482366}
   - component: {fileID: 901482365}
   - component: {fileID: 901482371}
-  - component: {fileID: 901482370}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: SolidObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &901482364
 Transform:
@@ -2230,26 +2196,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &901482370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901482363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_OverrideArea: 0
-  m_Area: 1
-  m_OverrideGenerateLinks: 0
-  m_GenerateLinks: 0
-  m_IgnoreFromBuild: 0
-  m_ApplyToChildren: 1
-  m_AffectedAgents: 
 --- !u!114 &901482371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2263,7 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
-  m_Area: 1
+  m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
 --- !u!4 &1183422964 stripped
@@ -2283,13 +2229,12 @@ GameObject:
   - component: {fileID: 1498194980}
   - component: {fileID: 1498194979}
   - component: {fileID: 1498194982}
-  - component: {fileID: 1498194981}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1498194978
 Transform:
@@ -12294,26 +12239,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1498194981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498194977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_OverrideArea: 0
-  m_Area: 0
-  m_OverrideGenerateLinks: 0
-  m_GenerateLinks: 0
-  m_IgnoreFromBuild: 0
-  m_ApplyToChildren: 0
-  m_AffectedAgents: 
 --- !u!114 &1498194982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12327,7 +12252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
-  m_Area: 0
+  m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
 --- !u!114 &1554066387 stripped
@@ -12351,7 +12276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608608822}
   - component: {fileID: 1608608821}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12600,11 +12525,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 255504622247660031, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2826389741955295831, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3490412989836769283, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_LocalScale.x
@@ -12664,15 +12589,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651013844270715938, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4653579960378413652, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841658636345892572, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12695,7 +12620,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 760971330320053618, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3255496831004660300, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12779,7 +12704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9207464537343717986, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5147267703499260926, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
