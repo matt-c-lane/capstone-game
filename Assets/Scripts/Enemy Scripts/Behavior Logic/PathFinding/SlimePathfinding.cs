@@ -25,12 +25,27 @@ public class SlimePathfinding : MonoBehaviour
 
     void Start()
     {
+        var agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
         _player = GameObject.FindGameObjectWithTag("Player").transform;
         SetRandomWanderTarget();
     }
 
     void Update()
     {
+        if (_agent.isOnNavMesh)
+        {
+            _agent.SetDestination(_player.position);
+        }
+
+        if (Time.time >= _timer)
+        {
+            UpdateMovement();
+            _timer = Time.time + _updateInterval;
+        }
+
+       // Slime.SetDestination(_player.position);
         if (Time.time >= _timer)
         {
             UpdateMovement();
