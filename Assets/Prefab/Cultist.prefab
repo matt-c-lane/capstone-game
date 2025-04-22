@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 5978530963184909068}
   - component: {fileID: 8808526271013181378}
   m_Layer: 12
-  m_Name: Slime
+  m_Name: Cultist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
