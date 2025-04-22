@@ -46,14 +46,13 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
+        if (classPower) classPower.Restart();
     }
 
     void Start()
     {
-        SetClass(chosenClass);
-        EquipWeapon(equippedWeapon);
-
         // === Setup ===
         rb = GetComponent<Rigidbody2D>();
         inventory = new Inventory();
@@ -65,6 +64,12 @@ public class Player : MonoBehaviour
         statser = new PlayerStatsManager(this);
 
         uiManager.UpdateStats(statser.body, statser.mind, statser.luck);
+        
+        equippedWeapon = ClassSelectionManager.weaponFirst;
+        offWeapon = ClassSelectionManager.weaponSecond;
+        EquipWeapon(equippedWeapon);
+        chosenClass = ClassSelectionManager.selectedClass;
+        SetClass(chosenClass);
     
         // === Set Player Position ===
         transform.position = startingPosition.initialValue;

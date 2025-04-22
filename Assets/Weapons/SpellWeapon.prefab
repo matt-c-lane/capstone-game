@@ -47,6 +47,8 @@ MonoBehaviour:
   weaponName: Bow
   weaponIcon: {fileID: 3668121467037184578, guid: 44e1e48838b1ecc4ea81ea89abbad110, type: 3}
   attack: {fileID: 11400000, guid: adb5c221a521d9f4694b72eeafe3eefe, type: 2}
+  effect: {fileID: 0}
+  cooldownTime: 0.5
   projectileSprite: {fileID: -120800573, guid: 3812e7be1019554428ffb61925f8e20e, type: 3}
-  weaponSpriteSize: {x: 1, y: 1}
+  weaponSpriteSize: {x: 0, y: 0}
   projectileSpriteSize: {x: 1, y: 1}
