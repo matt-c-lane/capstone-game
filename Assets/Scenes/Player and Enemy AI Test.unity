@@ -643,10 +643,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e13dfa3dbc3374799022f8a28dd527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothing: 0
-  maxPosition: {x: 0, y: 0}
-  minPosition: {x: 0, y: 0}
+  target: {fileID: 1639217385}
+  smoothing: 0.6
+  maxPosition: {x: 40, y: 40}
+  minPosition: {x: -40, y: -40}
 --- !u!114 &190854498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14364,6 +14364,11 @@ Transform:
   - {fileID: 1498194978}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1639217385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3255496831004660300, guid: 4f87a1ecba62fce44afe2948b3edfa90, type: 3}
+  m_PrefabInstance: {fileID: 7009759125059532167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1699196125
 GameObject:
   m_ObjectHideFlags: 0

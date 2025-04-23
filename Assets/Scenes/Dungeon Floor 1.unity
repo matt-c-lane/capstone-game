@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 875529099}
   m_Layer: 7
   m_Name: Player Room Spawn
-  m_TagString: PlayerSpawnRoom
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,9 +604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
-  - {fileID: 5217047668501794180, guid: 26317b0a47e47af46bd9ea3f53a0b4a4, type: 3}
+  - {fileID: 913921316795664852, guid: 6eae7746890d4ef40a690a8b29a310bf, type: 3}
   - {fileID: 3825740753697516563, guid: af24cd0278a9368488d0a7f83ff55d95, type: 3}
-  - {fileID: 3609742044856035411, guid: c54920ae1c7ec0b48b4b01fbd1a6e815, type: 3}
+  - {fileID: 5217047668501794180, guid: 4b36f60ffa624824ea1b14a942e35a98, type: 3}
   spawnPoint: {fileID: 875529100}
 --- !u!4 &875529100
 Transform:
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 1141605835}
   m_Layer: 0
   m_Name: Destroyer
-  m_TagString: PlayerSpawnRoom
+  m_TagString: SpawnPoint
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -713,7 +713,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 2056
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1323,8 +1323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 708476902}
   smoothing: 0.2
-  maxPosition: {x: 0.5, y: 5}
-  minPosition: {x: -0.5, y: -5}
+  maxPosition: {x: 0.6, y: 5}
+  minPosition: {x: -0.6, y: -5}
 --- !u!114 &1630626499
 MonoBehaviour:
   m_ObjectHideFlags: 0
