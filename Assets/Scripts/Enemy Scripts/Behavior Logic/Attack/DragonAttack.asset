@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbda752426882224a88d0450503b80cb, type: 3}
+  m_Name: DragonAttack
+  m_EditorClassIdentifier: 
+  fireBreathPrefab: {fileID: 7887183051309658710, guid: 6a818e5910333bd4aae1e5aa88120f51, type: 3}
+  timeBetweenBreaths: 3
+  breathDuration: 2
+  breathDistance: 5
+  breathSpeed: 8
+  breathDamage: 5
+  scratchRange: 2
+  scratchDamage: 15
+  timeBetweenScratches: 1.5
+  timeTillExit: 3
+  distanceToCountExit: 6
