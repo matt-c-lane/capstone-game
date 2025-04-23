@@ -13,11 +13,6 @@ public class RoomMove : MonoBehaviour
         cam = Camera.main.GetComponent<CameraFollow>();
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object that collided has the "Player" tag
