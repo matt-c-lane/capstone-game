@@ -32,27 +32,43 @@ void Start()
 }
 
     private void SpawnEnemies()
+{
+    int maxAttempts = 10; // Maximum attempts to find a valid position for each enemy
+
+    while (enemiesSpawned < totalEnemiesToSpawn)
     {
-        while (enemiesSpawned < totalEnemiesToSpawn)
+        bool validPositionFound = false;
+        Vector2 randomPosition = Vector2.zero;
+
+        // Try to find a valid position within the maximum number of attempts
+        for (int attempt = 0; attempt < maxAttempts; attempt++)
         {
             // Generate a random position within the spawn radius
-            Vector2 randomPosition = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
+            randomPosition = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
 
-            // Spawn the enemy at the random position
-            Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
-
-            // Increment the counter
-            enemiesSpawned++;
+            // Check if the position overlaps with a wall tile
+            Collider2D hitCollider = Physics2D.OverlapCircle(randomPosition, 0.5f, LayerMask.GetMask("Wall"));
+            if (hitCollider == null) // No wall detected at this position
+            {
+                validPositionFound = true;
+                break;
+            }
         }
 
-        // Disable the spawner after spawning all enemies
-        Destroy(gameObject);
+        // If a valid position is found, spawn the enemy
+        if (validPositionFound)
+        {
+            Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
+            enemiesSpawned++;
+        }
+        else
+        {
+            Debug.LogWarning("Failed to find a valid position for an enemy after maximum attempts.");
+            break; // Exit the loop if no valid position is found
+        }
     }
 
-    // Optional: Visualize the spawn radius in the editor
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, spawnRadius);
-    }
+    // Disable the spawner after spawning all enemies
+    Destroy(gameObject);
+}
 }
