@@ -40,135 +40,48 @@ public class DragonAttack : EnemyAttackSOBase
         }
 #endif
     }
+    [SerializeField] private float closeRangeThreshold = 3f;
+
+    using UnityEngine;
+
+[CreateAssetMenu(fileName = "Attack-Dragon", menuName = "Enemy Logic/Attack Logic/Dragon Attack")]
+public class DragonAttack : EnemyAttackSOBase
+{
+    [SerializeField] private float closeRangeThreshold = 3f;
 
     public override void DoEnterlogic()
     {
         base.DoEnterlogic();
-        breathTimer = 0f;
-        scratchTimer = 0f;
-        exitTimer = 0f;
-        isBreathing = false;
-        enemy.MoveEnemy(Vector2.zero);
-    }
 
-    public override void DoFrameUpdateLogic()
-    {
-        base.DoFrameUpdateLogic();
-        enemy.MoveEnemy(Vector2.zero);
+        float distance = Vector2.Distance(enemy.transform.position, playerTransform.position);
 
-        float distanceToPlayer = Vector2.Distance(playerTransform.position, enemy.transform.position);
+        enemy.Animator.SetBool("IsAttacking", true);
+        enemy.Animator.SetBool("IsMoving", false);
 
-        // Fire Breath Attack
-        if (!isBreathing && breathTimer > timeBetweenBreaths && distanceToPlayer <= breathDistance)
+        if (distance <= closeRangeThreshold)
         {
-            breathTimer = 0f;
-            isBreathing = true;
-
-            if (animator != null)
-            {
-                animator.SetTrigger("FireBreath");
-            }
-
-            if (fireBreathPrefab != null)
-            {
-                Vector2 direction = (playerTransform.position - enemy.transform.position).normalized;
-                GameObject fireBreathObj = Instantiate(fireBreathPrefab, enemy.transform.position, Quaternion.identity);
-                currentBreath = fireBreathObj.GetComponent<Projectile>();
-
-                if (currentBreath != null)
-                {
-                    currentBreath.Initialize(
-                        damage: breathDamage,
-                        damageType: DamageType.Magical,
-                        speed: breathSpeed,
-                        direction: direction,
-                        maxDistance: 0f // Continuous breath
-                    );
-                }
-                else
-                {
-                    Debug.LogError("Instantiated fire breath is missing Projectile component!", fireBreathObj);
-                    Destroy(fireBreathObj);
-                }
-            }
-            else
-            {
-                Debug.LogError("Fire breath prefab is not assigned in DragonAttack!", this);
-                isBreathing = false;
-            }
-        }
-
-        // Claw Attack
-        if (scratchTimer > timeBetweenScratches && distanceToPlayer <= scratchRange)
-        {
-            scratchTimer = 0f;
-            if (animator != null)
-            {
-                animator.SetTrigger("ScratchAttack");
-            }
-        }
-
-        // Fire Breath Duration
-        if (isBreathing)
-        {
-            breathTimer += Time.deltaTime;
-            if (breathTimer >= breathDuration)
-            {
-                isBreathing = false;
-                if (currentBreath != null)
-                {
-                    Destroy(currentBreath.gameObject);
-                }
-            }
+            enemy.Animator.SetBool("IsClose", true);
+            enemy.Animator.SetBool("IsFar", false);
         }
         else
         {
-            breathTimer += Time.deltaTime;
-        }
-
-        scratchTimer += Time.deltaTime;
-
-        // Exit Logic
-        if (distanceToPlayer > distanceToCountExit)
-        {
-            exitTimer += Time.deltaTime;
-            if (exitTimer > timeTillExit)
-            {
-                enemy.StateMachine.ChangeState(enemy.ChaseState);
-            }
-        }
-        else
-        {
-            exitTimer = 0f;
-        }
-    }
-
-    public override void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType)
-    {
-        base.DoAnimationTriggerEventLogic(triggerType);
-
-        if (triggerType == Enemy.AnimationTriggerType.ScratchHit)
-        {
-            if (Vector2.Distance(playerTransform.position, enemy.transform.position) <= scratchRange)
-            {
-                var damageable = playerTransform.GetComponent<IDamagable>();
-                if (damageable != null)
-                {
-                    int[] stats = { 0, 0 }; // Default stats for physical attack
-                    //damageable.Damage(scratchDamage, DamageType.Physical, stats);
-                }
-            }
+            enemy.Animator.SetBool("IsClose", false);
+            enemy.Animator.SetBool("IsFar", true);
         }
     }
 
     public override void DoExitLogic()
     {
         base.DoExitLogic();
-        if (currentBreath != null)
-        {
-            Destroy(currentBreath.gameObject);
-        }
+
+        enemy.Animator.SetBool("IsAttacking", false);
+        enemy.Animator.SetBool("IsClose", false);
+        enemy.Animator.SetBool("IsFar", false);
+        enemy.Animator.SetBool("IsMoving", true); // Resume walking
     }
+}
+
+
 
     public override void ResetValues()
     {

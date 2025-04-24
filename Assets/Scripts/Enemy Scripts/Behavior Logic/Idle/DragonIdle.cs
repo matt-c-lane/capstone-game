@@ -31,6 +31,7 @@ public class DragonIdle : EnemyIdleSOBase
     public override void DoEnterlogic()
     {
         base.DoEnterlogic();
+        enemy.Animator.SetBool("IsMoving", false);
         homePosition = enemy.transform.position;
         idleTimer = 0f;
         currentAngle = 0f;

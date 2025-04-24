@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbda752426882224a88d0450503b80cb, type: 3}
   m_Name: DragonAttack
   m_EditorClassIdentifier: 
-  fireBreathPrefab: {fileID: 7887183051309658710, guid: 6a818e5910333bd4aae1e5aa88120f51, type: 3}
+  fireBreathPrefab: {fileID: 8075790649222947165, guid: 3b007e0ccd736214ba42efa36f4a3477, type: 3}
   timeBetweenBreaths: 3
   breathDuration: 2
   breathDistance: 5
