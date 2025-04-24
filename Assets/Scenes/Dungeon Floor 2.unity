@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d22d2d0c35ff8408c7c1a063cac4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 2
+  sceneToLoad: 5
   playerPosition: {x: 3.5, y: 4}
   playerStorage: {fileID: 11400000, guid: 72bed6ca83fe39a4c90926f24fea9b0f, type: 2}
 --- !u!61 &1259070520
@@ -1259,6 +1259,9 @@ MonoBehaviour:
   waitTime: 2
   Stairs: {fileID: 1259070516}
   stairsSpawnRadius: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &1291494949
 Transform:
   m_ObjectHideFlags: 0
