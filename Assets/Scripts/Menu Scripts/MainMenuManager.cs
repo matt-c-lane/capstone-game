@@ -5,7 +5,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("PlayerCreation"); // Replace with your actual game scene name
+        SceneManager.LoadScene("PlayerCreation");
     }
 
     public void ContinueGame()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerStats
 {
@@ -122,7 +123,7 @@ public class Player : MonoBehaviour
     }
 
     public void Defeat() { Die(); }
-    private void Die() { Debug.Log("Player has died!"); }
+    private void Die() { Debug.Log("Player has died!"); SceneManager.LoadScene("Death"); Destroy(gameObject);}
 
     // === Inventory Functions ===
     public void AddToInventory(InventoryItem item) { inventory.AddItem(item); }

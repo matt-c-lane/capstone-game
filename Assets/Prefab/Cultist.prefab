@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5433659490086701618}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TriggerAreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6632430121931091047}
   - component: {fileID: 3047499173364415574}
   - component: {fileID: 1486439928238988634}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AggroRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8209717257416656947}
   - component: {fileID: 5917279276825201645}
   - component: {fileID: 3522460308771471187}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cultist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 8345697092864104246}
   - component: {fileID: 4173909814267078727}
   - component: {fileID: 7399774713223686498}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 3784094678573456200}
   - component: {fileID: 7177628074762978213}
   - component: {fileID: 2614084355331212100}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: StrikingDistance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
