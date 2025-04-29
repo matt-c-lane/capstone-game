@@ -18,34 +18,34 @@ public class EnemyChaseDirectToPlayer : EnemyChaseSOBase
     public override void DoEnterlogic()
     {
         base.DoEnterlogic();
-        chaseTimer = 0f; // Reset the chase timer when entering the chase state
+        chaseTimer = 0f;
+        enemy.Animator.SetBool("IsMoving", true); // Start walk animation when entering chase
     }
 
     public override void DoExitLogic()
     {
         base.DoExitLogic();
+        enemy.Animator.SetBool("IsMoving", false); // Stop walk animation when exiting chase
     }
 
     public override void DoFrameUpdateLogic()
     {
         base.DoFrameUpdateLogic();
 
-        // Check if the player is no longer aggroed
         if (!enemy.IsAggroed)
         {
-            chaseTimer += Time.deltaTime; // Increment the chase timer
+            chaseTimer += Time.deltaTime;
 
-            // If the cooldown period has passed, transition back to IdleState
             if (chaseTimer >= chaseCooldown)
             {
                 enemy.StateMachine.ChangeState(enemy.IdleState);
-                chaseTimer = 0f; // Reset the timer
+                chaseTimer = 0f;
                 return;
             }
         }
         else
         {
-            chaseTimer = 0f; // Reset the timer if the player is still aggroed
+            chaseTimer = 0f;
         }
 
         // Move towards the player

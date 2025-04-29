@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: dbda752426882224a88d0450503b80cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fireBreathPrefab: {fileID: 7887183051309658710, guid: 6a818e5910333bd4aae1e5aa88120f51, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,7 +23,7 @@ public class PlayerProjectile : Projectile
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.Damage(damage, damageType, stats);
+                //enemy.Damage(damage, damageType, stats);
                 Destroy(gameObject);
             }
         }
