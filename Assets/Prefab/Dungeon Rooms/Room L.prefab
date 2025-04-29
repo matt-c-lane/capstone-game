@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6517120159873309925}
   - component: {fileID: 5566967796995712558}
   - component: {fileID: 1037324280122330098}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3700,7 +3700,7 @@ GameObject:
   - component: {fileID: 4738701000045418178}
   - component: {fileID: 2840479738162867890}
   - component: {fileID: 6954937140427289710}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: SolidObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5090,7 +5090,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5468510608610089315, guid: 23ff25b383c1d464e9963bf4f2e63dfe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5468510608610089315, guid: 23ff25b383c1d464e9963bf4f2e63dfe, type: 3}
       propertyPath: m_LocalPosition.x
