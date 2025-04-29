@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
     }
 
     public void Defeat() { Die(); }
-    private void Die() { Debug.Log("Player has died!"); SceneManager.LoadScene("Death"); Destroy(gameObject);}
+    private void Die() { Debug.Log("Player has died!"); SceneManager.LoadScene("Death"); gameObject.SetActive(false);}
 
     // === Inventory Functions ===
     public void AddToInventory(InventoryItem item) { inventory.AddItem(item); }
