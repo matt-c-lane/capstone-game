@@ -2522,6 +2522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist
       objectReference: {fileID: 0}
+    - target: {fileID: 3651013844270715938, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5917279276825201645, guid: 3a86e94da9ada8d40ba9dddff75f701f, type: 3}
       propertyPath: Player
       value: 

@@ -24,7 +24,7 @@ public class MeleeAttack : Attack
 
             if (angleToEnemy <= attackArcAngle / 2f) 
             {
-                //enemy.GetComponent<Enemy>()?.Damage(damage, damageType, stats);
+                enemy.GetComponent<Enemy>()?.Damage(damage, damageType, stats);
             }
         }
 
