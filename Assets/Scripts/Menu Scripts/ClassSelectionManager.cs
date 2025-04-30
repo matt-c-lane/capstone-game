@@ -42,6 +42,6 @@ public class ClassSelectionManager : MonoBehaviour
     {
         
         Debug.Log($"Player is a: {selectedClass}");
-        SceneManager.LoadScene("Player and Enemy AI Test");
+        SceneManager.LoadScene("Dungeon Floor 1");
     }
 }

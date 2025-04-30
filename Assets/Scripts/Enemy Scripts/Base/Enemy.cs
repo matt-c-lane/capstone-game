@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     public bool IsAggroed { get; set; }
     public bool IsWithinStrickingDistance { get; set; }
 
-    public Animator Animator { get; private set; } // ✅ Animator property added
+    public Animator Animator { get; private set; }
 
     public int armor = 1; //Physical attacks, should never be zero
     public int shield = 1; //Magic attacks, should never be zero
