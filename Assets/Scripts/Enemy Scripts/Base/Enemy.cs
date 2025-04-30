@@ -14,6 +14,11 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
 
     public Animator Animator { get; private set; } // ✅ Animator property added
 
+    public int armor = 1; //Physical attacks, should never be zero
+    public int shield = 1; //Magic attacks, should never be zero
+
+    public int exp = 1; //Amount of experience the player gets
+
     public void Awake()
     {
         EnemyIdleBaseInstance = Instantiate(EnemyIdleBase);
@@ -52,18 +57,23 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
 
     #region Health/Damage Functions
 
-    public void Damage(float damageAmount)
+    public void Damage(int damage, DamageType damageType, int[] stats)
     {
-        CurrentHealth -= damageAmount;
+        float damageFactor = 1f; //Value attack damage is multiplied by
+        float damageCalc; //Final attack damage before rounding
 
-        if (CurrentHealth <= 0f)
+        if (damageType == DamageType.Physical)
         {
-            Die();
+            damageFactor = (damage + stats[0])/armor;
         }
-    }
+        else if (damageType == DamageType.Magical)
+        {
+            damageFactor = (damage + stats[1])/shield;
+        }
 
-    public void TakeDamage(int damage)
-    {
+        damageCalc = (damageFactor*damage);
+        damage = (int)System.Math.Floor(damageCalc < 1 ? 1 : damageCalc); //All attacks deal at least 1 damage
+
         CurrentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage!");
 
@@ -72,14 +82,19 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
             Die();
         }
     }
-
     private void Die()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
-        Animator?.SetTrigger("Die"); // ✅ Optional death animation
-        Destroy(gameObject, 1.0f);   // Optional delay for animation
+        GiveExp();
+        Destroy(gameObject);
     }
-
+    private void GiveExp()
+    {
+        Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player.leveler.GainExp(exp);
+        Debug.Log($"Player gained {exp} EXP!");
+    }
+    
     #endregion
 
     #region Movement Functions
