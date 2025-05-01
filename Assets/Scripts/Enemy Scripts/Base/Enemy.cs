@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour, IDamagable, IEnemyMovable, ITriggerCheckable
     {
         CurrentHealth = MaxHealth;
         RB = GetComponent<Rigidbody2D>();
-        Animator = GetComponent<Animator>(); // ✅ Initialize Animator
+        Animator = GetComponent<Animator>();
 
         EnemyIdleBaseInstance.Initialize(gameObject, this);
         EnemyChaseBaseInstance.Initialize(gameObject, this);
